@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #34495e;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 200px;
+  width: 200px;
+  background: #FFF;
+  border-radius: 50%;
+}
+.center:hover > .circle {
+  cursor: pointer;
+}
+.center:hover > .circle .num1 {
+  -webkit-transform: translate(-150%, -50%) scale(0);
+          transform: translate(-150%, -50%) scale(0);
+  opacity: 0;
+  transition: 1s ease;
+}
+.center:hover > .circle .num2 {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 1s ease;
+}
+.center:hover > .circle .dash {
+  -webkit-transform: translate(-50%, -100%) rotate(0deg);
+          transform: translate(-50%, -100%) rotate(0deg);
+  transition: 1s ease;
+}
+.center .gradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background: #b92b27;
+  background: linear-gradient(to right, #1565C0, #b92b27);
+}
+.center .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #FFF;
+  overflow: hidden;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+.center .circle .num {
+  font-size: 3em;
+  color: #b92b27;
+  font-size: bold;
+}
+.center .circle .num:before {
+  content: "o";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  font-size: .4em;
+  color: #b92b27;
+}
+.center .circle .num1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: 1s ease;
+}
+.center .circle .num2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(50%, -50%) scale(0);
+          transform: translate(50%, -50%) scale(0);
+  opacity: 0;
+  transition: 1s ease;
+}
+.center .circle .room {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 200%);
+          transform: translate(-50%, 200%);
+  font-size: .7em;
+}
+.center .triangle {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #FFF;
+}
+.center .dash {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -100%) rotate(-60deg);
+          transform: translate(-50%, -100%) rotate(-60deg);
+  width: 5px;
+  height: 50px;
+  background: transparent;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  transition: 1s ease;
+}
+.center .dash:before {
+  content: "";
+  background: #b92b27;
+  position: absolute;
+  left: 0;
+  top: -35px;
+  height: 50px;
+  width: 2px;
+}

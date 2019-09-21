@@ -1,0 +1,129 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+$black: #2d3436;
+$yellow: #f1c40f;
+$more-yellow: #f39c12;
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  margin-top: -192px;
+  margin-left: -175px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: $black;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	.pacman {
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		z-index: 99;
+	
+		.eye {
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			top: -15px;
+			left: 50px;
+			background: $black;
+			border-radius: 50%;
+			z-index: 99;
+			animation: eye 1s ease-in-out infinite;
+		}
+	}
+	
+	.pacman::before, .pacman::after {
+			content: "";
+			display: block;
+			height: 0;
+			width: 0;
+			position: absolute;
+		
+			border: solid 50px $yellow;
+			margin-top: -30px;
+			border-radius: 50%;
+			border-right-color: transparent;
+			border-bottom-color: transparent;
+	}
+	
+	.pacman::before {
+		animation: top 1s ease-in-out infinite;
+	}
+	
+	.pacman::after {
+		border-color: $yellow;
+		border-right-color: transparent;
+		border-top-color:transparent;
+		animation: bottom 1s ease-in-out infinite;
+	}
+	
+	.dots {
+		position: absolute;
+		right: 0px;
+		top: 43%;
+		width: 20px;
+		height: 20px;
+		background: $yellow;
+		border-radius: 50%;
+		animation: move 1s linear infinite;
+	}
+}
+
+
+@keyframes top {
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(44deg);
+		
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+@keyframes bottom {
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(-44deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+@keyframes eye {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(10px,10px);
+		height: 0;
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+
+@keyframes move {
+	0% {
+		transform:translate(0, 0);
+	}
+
+	100% {
+		transform:translate(-150px, 0);
+	}
+}

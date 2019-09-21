@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(#FDC830, #F37335);
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 150px;
+  background: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.card .head {
+  height: 30%;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card .lines {
+  height: 70%;
+  width: 100%;
+  background: #FFF;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card .lines .line {
+  height: 5px;
+  width: 80px;
+  background: #bdc3c7;
+}
+
+.c3 {
+  -webkit-transform: translate(25%, -50%) scale(0.5);
+          transform: translate(25%, -50%) scale(0.5);
+  -webkit-animation: card3 3s ease infinite;
+          animation: card3 3s ease infinite;
+}
+.c3 .head {
+  background: #f39c12;
+}
+
+.c2 {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: card2 3s ease infinite;
+          animation: card2 3s ease infinite;
+}
+.c2 .head {
+  background: #3498db;
+}
+
+.c1 {
+  -webkit-transform: translate(-125%, -50%) scale(0.5);
+          transform: translate(-125%, -50%) scale(0.5);
+  -webkit-animation: card1 3s ease infinite;
+          animation: card1 3s ease infinite;
+}
+.c1 .head {
+  background: #2ecc71;
+}
+
+@-webkit-keyframes card1 {
+  0% {
+    -webkit-transform: translate(-125%, -50%) scale(0.5);
+            transform: translate(-125%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  10% {
+    z-index: 2;
+  }
+  33% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+  }
+  35% {
+    z-index: 2;
+  }
+  66% {
+    -webkit-transform: translate(25%, -50%) scale(0.5);
+            transform: translate(25%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: translate(-125%, -50%) scale(0.5);
+            transform: translate(-125%, -50%) scale(0.5);
+    z-index: 1;
+  }
+}
+
+@keyframes card1 {
+  0% {
+    -webkit-transform: translate(-125%, -50%) scale(0.5);
+            transform: translate(-125%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  10% {
+    z-index: 2;
+  }
+  33% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+  }
+  35% {
+    z-index: 2;
+  }
+  66% {
+    -webkit-transform: translate(25%, -50%) scale(0.5);
+            transform: translate(25%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: translate(-125%, -50%) scale(0.5);
+            transform: translate(-125%, -50%) scale(0.5);
+    z-index: 1;
+  }
+}
+@-webkit-keyframes card2 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+  }
+  5% {
+    z-index: 2;
+  }
+  33% {
+    -webkit-transform: translate(25%, -50%) scale(0.5);
+            transform: translate(25%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  66% {
+    -webkit-transform: translate(-125%, -50%) scale(0.5);
+            transform: translate(-125%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  95% {
+    z-index: 2;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+  }
+}
+@keyframes card2 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+  }
+  5% {
+    z-index: 2;
+  }
+  33% {
+    -webkit-transform: translate(25%, -50%) scale(0.5);
+            transform: translate(25%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  66% {
+    -webkit-transform: translate(-125%, -50%) scale(0.5);
+            transform: translate(-125%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  95% {
+    z-index: 2;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+  }
+}
+@-webkit-keyframes card3 {
+  0% {
+    -webkit-transform: translate(25%, -50%) scale(0.5);
+            transform: translate(25%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  33% {
+    -webkit-transform: translate(-125%, -50%) scale(0.5);
+            transform: translate(-125%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  62% {
+    z-index: 2;
+  }
+  66% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+  }
+  68% {
+    z-index: 2;
+  }
+  100% {
+    -webkit-transform: translate(25%, -50%) scale(0.5);
+            transform: translate(25%, -50%) scale(0.5);
+    z-index: 1;
+  }
+}
+@keyframes card3 {
+  0% {
+    -webkit-transform: translate(25%, -50%) scale(0.5);
+            transform: translate(25%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  33% {
+    -webkit-transform: translate(-125%, -50%) scale(0.5);
+            transform: translate(-125%, -50%) scale(0.5);
+    z-index: 1;
+  }
+  62% {
+    z-index: 2;
+  }
+  66% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+  }
+  68% {
+    z-index: 2;
+  }
+  100% {
+    -webkit-transform: translate(25%, -50%) scale(0.5);
+            transform: translate(25%, -50%) scale(0.5);
+    z-index: 1;
+  }
+}

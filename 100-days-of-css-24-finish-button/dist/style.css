@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #43cea2;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.frame .hidden {
+  visibility: hidden;
+}
+.frame .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  width: 150px;
+  color: #FFF;
+  -webkit-transform: translate(-70px, -30px);
+          transform: translate(-70px, -30px);
+  border-radius: 50px;
+  border: 2px solid #FFF;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+.frame .button:hover {
+  background: #43cea2;
+}
+.frame .button .checkmark {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 20px;
+  font-size: 40px;
+  opacity: 0;
+  color: #FFF;
+  -webkit-transform: scaleX(-1) rotate(-35deg);
+          transform: scaleX(-1) rotate(-35deg);
+}
+.frame .button .explosion {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  border: 2px solid #FFF;
+  opacity: 0;
+  z-index: 99;
+}
+.frame .circle {
+  position: absolute;
+  top: 11px;
+  left: 101px;
+  stroke-width: 2px;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.frame input:checked ~ .button {
+  -webkit-animation: button .5s ease both;
+          animation: button .5s ease both;
+}
+.frame input:checked ~ .button .checkmark {
+  -webkit-animation: check 2s ease-out 1s both;
+          animation: check 2s ease-out 1s both;
+}
+.frame input:checked ~ .button .explosion {
+  -webkit-animation: explode 1s ease-out 2.5s both;
+          animation: explode 1s ease-out 2.5s both;
+}
+.frame input:checked ~ .circle {
+  z-index: 2;
+  -webkit-animation: circle 5s linear forwards 0.5s;
+          animation: circle 5s linear forwards 0.5s;
+}
+
+@-webkit-keyframes button {
+  0% {
+    width: 150px;
+    border-color: #fff;
+    color: #fff;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    width: 60px;
+    left: 62%;
+    border-color: #45B078;
+    background: transparent;
+    color: transparent;
+  }
+}
+
+@keyframes button {
+  0% {
+    width: 150px;
+    border-color: #fff;
+    color: #fff;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    width: 60px;
+    left: 62%;
+    border-color: #45B078;
+    background: transparent;
+    color: transparent;
+  }
+}
+@-webkit-keyframes circle {
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 500 500;
+  }
+}
+@keyframes circle {
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 500 500;
+  }
+}
+@-webkit-keyframes check {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes check {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes explode {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes explode {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+}

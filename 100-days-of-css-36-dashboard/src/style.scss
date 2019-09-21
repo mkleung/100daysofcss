@@ -1,0 +1,123 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #130f40;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	
+	background: #FFF;
+	height: 250px;
+	width: 300px;
+	
+	input {
+		display: none;
+	}
+	
+	.head {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.labels {
+		background: #2ecc71;
+		width: 100%;
+		height: 50px;
+		
+		display: flex;
+		// justify-content: space-around;
+		align-items: center;
+		label {
+			color: #FFF;
+			width: 50px;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&:hover {
+				cursor: pointer;
+				background: darken(#2ecc71, 10%);
+			}
+		}
+	}
+	
+	#dashboard:checked ~ .dashboard {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: .5s ease-in-out;
+	}
+	
+	#dashboard:checked ~ .labels {
+		.labelDashboard {
+			background: darken(#2ecc71, 10%);
+		}
+	}
+	
+	#settings:checked ~ .settings {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: .5s ease-in-out;
+	}
+	
+		#settings:checked ~ .labels {
+		.labelSetting {
+			background: darken(#2ecc71, 10%);
+		}
+	}
+	
+	#notification:checked ~ .notification {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: .5s ease-in-out;
+	}
+	
+	#notification:checked ~ .labels {
+		.labelNotification {
+			background: darken(#2ecc71, 10%);
+		}
+	}
+	
+	
+	.content {
+		position: absolute;
+		top: 40px;
+		left: 0px;
+		padding: 15px;
+		opacity: 0;
+		transform: translate(0, 50px);
+		// transition: .5s ease-in-out;
+		.text {
+			height: 80px;
+			width: 100%;
+			div {
+				display: inline-block;
+				height: 5px;
+				width: 150px;
+				background: rgba(0,0,0,.2);
+			}
+		}
+	}
+
+}

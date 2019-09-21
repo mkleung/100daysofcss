@@ -1,0 +1,92 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #000;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+	background: #FFF;
+	height: 200px;
+	width: 200px;
+	
+	transform: translate(-50%,-50%) rotate(45deg);
+  border-radius: 200px 0;
+  overflow: hidden;
+  cursor: pointer;
+	transition: all 1s ease;
+	&:hover {
+		border-radius: 160px 0;
+		transition: all 1s ease;
+	}
+	&:hover > .ball {
+			
+
+		animation-play-state: paused;
+				top: 25px;
+		left: 50px;
+		}
+	.ball {
+		position: absolute;
+		top: 25px;
+		left: 50px;
+		
+		background: #ecf0f1;
+		height: 100px;
+		width: 100px;
+		border-radius: 80px;
+		animation: move 5s ease infinite;
+		.iris {
+			position: absolute;
+			top: 32px;
+			left: 32px;
+			background: #1abc9c;
+			height: 35px;
+			width: 35px;
+			border-radius: 35px;
+		}
+	}
+}
+
+@keyframes move {
+	0% {
+		top: 25px;
+		left: 50px;
+	}
+	25% {
+		top: 80px;
+		left: 100px;
+	}
+	50% {
+		top: -50px;
+		left: 120px;
+	}
+	75% {
+		top: 120px;
+		left: 0px;
+	}
+	100% {
+		top: 25px;
+		left: 50px;
+	}
+}

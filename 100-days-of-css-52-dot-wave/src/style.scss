@@ -1,0 +1,267 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #34495e;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	width: 200px;
+	height: 200px;
+	
+	
+	
+	.dot {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		
+		height:10px;
+		width: 10px;
+		border-radius: 50%;
+		background: #FFF;
+	}
+	
+	@for $a from 1 through 20 {
+		$deg: $a * 20;
+		$width: 20px;
+		.dota-#{$a} {
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growa#{$a} 2s ease infinite;
+			background: #F60000;
+			@keyframes growa#{$a} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.2);
+				}
+			}
+
+		}
+	}
+
+
+	@for $b from 1 through 20 {
+		$deg: $b * 20;
+		$width: 30px;
+		.dotb-#{$b} {
+			background: #F60000;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growb#{$b} 2s ease infinite .2s;
+			@keyframes growb#{$b} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.3);
+				}
+			}
+		}
+	}
+	
+	
+	@for $c from 1 through 20 {
+		$deg: $c * 20;
+		$width: 40px;
+		.dotc-#{$c} {
+			background: #FF8C00;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growc#{$c} 2s ease infinite .4s;
+			@keyframes growc#{$c} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.4);
+				}
+			}
+		}
+	}
+	
+	@for $d from 1 through 20 {
+		$deg: $d * 20;
+		$width: 50px;
+		.dotd-#{$d} {
+			background: #FF8C00;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growd#{$d} 2s ease infinite .6s;
+			@keyframes growd#{$d} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.5);
+				}
+			}
+		}
+	}
+	
+	@for $e from 1 through 20 {
+		$deg: $e * 20;
+		$width: 60px;
+		.dote-#{$e} {
+			background: #FFEE00;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growe#{$e} 2s ease infinite .8s;
+			@keyframes growe#{$e} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.6);
+				}
+			}
+		}
+	}
+	
+	@for $f from 1 through 20 {
+		$deg: $f * 20;
+		$width: 70px;
+		.dotf-#{$f} {
+			background: #FFEE00;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growf#{$f} 2s ease infinite 1s;
+			@keyframes growf#{$f} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.7);
+				}
+			}
+		}
+	}
+	
+	@for $g from 1 through 20 {
+		$deg: $g * 20;
+		$width: 80px;
+		.dotg-#{$g} {
+			background: #4DE94C;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growg#{$g} 2s ease infinite 1.2s;
+			@keyframes growg#{$g} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.8);
+				}
+			}
+		}
+	}
+	
+	
+	@for $h from 1 through 20 {
+		$deg: $h * 20;
+		$width: 90px;
+		.doth-#{$h} {
+			background: #4DE94C;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growh#{$h} 2s ease infinite 1.4s;
+			@keyframes growh#{$h} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.8);
+				}
+			}
+		}
+	}
+	
+	@for $i from 1 through 20 {
+		$deg: $i * 20;
+		$width: 100px;
+		.doti-#{$i} {
+			background: #3783FF;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growi#{$i} 2s ease infinite 1.6s;
+			@keyframes growi#{$i} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.8);
+				}
+			}
+		}
+	}
+	
+	@for $j from 1 through 20 {
+		$deg: $j * 20;
+		$width: 110px;
+		.dotj-#{$j} {
+			background: #3783FF;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growj#{$j} 2s ease infinite 1.8s;
+			@keyframes growj#{$j} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.8);
+				}
+			}
+		}
+	}
+	
+	
+	@for $k from 1 through 20 {
+		$deg: $k * 20;
+		$width: 120px;
+		.dotk-#{$k} {
+			background: #4815AA;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growk#{$k} 2s ease infinite 2s;
+			@keyframes growk#{$k} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.8);
+				}
+			}
+		}
+	}
+	
+		@for $l from 1 through 20 {
+		$deg: $l * 20;
+		$width: 130px;
+		.dotl-#{$l} {
+			background: #4815AA;
+			transform: rotateZ($deg + deg) translateX($width);
+			animation: growl#{$l} 2s ease infinite 2.2s;
+			@keyframes growl#{$l} {
+				0%, 100% {
+					transform: rotateZ($deg + deg) translateX($width) scale(0);
+				}
+				50% {
+				transform: rotateZ($deg + deg) translateX($width) scale(.8);
+				}
+			}
+		}
+	}
+	
+}
+

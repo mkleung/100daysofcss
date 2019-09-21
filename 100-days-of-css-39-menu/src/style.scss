@@ -1,0 +1,112 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #686de0;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	
+	height: 400px;
+	width: 400px;
+	
+	.check {
+		display: none;
+	}
+	
+	.check:checked ~ .label {
+		height: 50px;
+		width: 300px;
+		animation: move 1s ease;
+		
+		span {
+			opacity: 1;
+			transition: 1s ease;
+			&:hover{
+				color: darken(#FFF, 30%);
+			}
+		}
+	}
+	
+	.check:not(:checked) ~ .label {
+
+		 animation: moveReverse 1s ease;
+	}
+	
+	.label {
+		border-top: 4px solid #FFF;
+		border-bottom: 4px solid #FFF;
+		height: 30px;
+		width: 50px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		span {
+			color: #FFF;
+			opacity: 0;
+			padding: 20px;
+			font-weight: bold;
+			transition: 1s ease;
+		}
+	
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	
+}
+
+@keyframes move {
+	0% {
+		height: 30px;
+		width: 50px;
+	}
+	50% {
+		height: 30px;
+		width: 300px;
+	}
+	100% {
+		height: 50px;
+		width: 300px;
+	}
+}
+
+@keyframes moveReverse {
+	0% {
+		height: 50px;
+		width: 300px;
+	}
+	50% {
+		height: 30px;
+		width: 300px;
+	}
+	100% {
+		height: 30px;
+		width: 50px;
+	}
+}

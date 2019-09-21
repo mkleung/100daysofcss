@@ -1,0 +1,63 @@
+class Item extends React.Component {
+	 render() {
+		 let item = this.props.item;
+		 let value = this.props.value;
+		 let output = item.replace(value,"<span style='color:#3498db; font-weight:bold;'>" + value +"</span>");
+    return (
+			<div onClick={() => (this.props.search(item))} className="selectItem" dangerouslySetInnerHTML={{__html: output}} ></div>
+		)
+  }
+}
+
+class Search extends React.Component {
+	constructor(props) {
+		super(props);
+		
+		this.state = ({
+			value: "",
+			list: ["apple", "mangoes", "bananas", "oranges"],
+			fruit: ""
+		})
+	}
+	
+	handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+	
+	search = (fruit) => {
+		this.setState({
+			value: "",
+			fruit: "You picked: " + fruit
+		})
+	}
+
+  render() {
+		let list = this.state.list;
+		let value = this.state.value;
+    return (
+      <div className="center">
+				<div className="result">{this.state.fruit}</div>
+				<div class="searchWrapper">
+					   <input type="text" className="search" value={this.state.value} onChange={this.handleChange.bind(this)} placeholder="Start tying fruits..." />
+				</div>
+
+				<div className={value === "" ? "list" : "list active"}>
+					<ul>
+						{list.map((item) => (
+								item.indexOf(value) !== -1 ?
+									<li>
+										<Item item={item} value={value}  search={this.search.bind(this)} />
+									</li> : ""
+								))
+						}
+					</ul>
+				</div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+	<Search  />,
+	document.getElementById('root')
+);

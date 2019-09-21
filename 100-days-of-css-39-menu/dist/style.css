@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #686de0;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 400px;
+  width: 400px;
+}
+.center .check {
+  display: none;
+}
+.center .check:checked ~ .label {
+  height: 50px;
+  width: 300px;
+  -webkit-animation: move 1s ease;
+          animation: move 1s ease;
+}
+.center .check:checked ~ .label span {
+  opacity: 1;
+  transition: 1s ease;
+}
+.center .check:checked ~ .label span:hover {
+  color: #b3b3b3;
+}
+.center .check:not(:checked) ~ .label {
+  -webkit-animation: moveReverse 1s ease;
+          animation: moveReverse 1s ease;
+}
+.center .label {
+  border-top: 4px solid #FFF;
+  border-bottom: 4px solid #FFF;
+  height: 30px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center .label span {
+  color: #FFF;
+  opacity: 0;
+  padding: 20px;
+  font-weight: bold;
+  transition: 1s ease;
+}
+.center .label:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes move {
+  0% {
+    height: 30px;
+    width: 50px;
+  }
+  50% {
+    height: 30px;
+    width: 300px;
+  }
+  100% {
+    height: 50px;
+    width: 300px;
+  }
+}
+
+@keyframes move {
+  0% {
+    height: 30px;
+    width: 50px;
+  }
+  50% {
+    height: 30px;
+    width: 300px;
+  }
+  100% {
+    height: 50px;
+    width: 300px;
+  }
+}
+@-webkit-keyframes moveReverse {
+  0% {
+    height: 50px;
+    width: 300px;
+  }
+  50% {
+    height: 30px;
+    width: 300px;
+  }
+  100% {
+    height: 30px;
+    width: 50px;
+  }
+}
+@keyframes moveReverse {
+  0% {
+    height: 50px;
+    width: 300px;
+  }
+  50% {
+    height: 30px;
+    width: 300px;
+  }
+  100% {
+    height: 30px;
+    width: 50px;
+  }
+}

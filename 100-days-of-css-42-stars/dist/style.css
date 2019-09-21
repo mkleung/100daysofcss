@@ -1,0 +1,709 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px solid #FFF;
+  box-shadow: 0px 0px 5px #CCC;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(to bottom, #1d4253 0%, #6bb5c4 100%);
+  border-radius: 300px;
+}
+.center .star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 1px;
+  background: #fff;
+}
+.center .star1 {
+  top: 166px;
+  left: 14px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star2 {
+  top: 125px;
+  left: 267px;
+  -webkit-animation: 3.6s flicker infinite;
+          animation: 3.6s flicker infinite;
+}
+.center .star3 {
+  top: 240px;
+  left: 91px;
+  -webkit-animation: 2.7s flicker infinite;
+          animation: 2.7s flicker infinite;
+}
+.center .star4 {
+  top: 271px;
+  left: 92px;
+  -webkit-animation: 3.8s flicker infinite;
+          animation: 3.8s flicker infinite;
+}
+.center .star5 {
+  top: 216px;
+  left: 110px;
+  -webkit-animation: 4s flicker infinite;
+          animation: 4s flicker infinite;
+}
+.center .star6 {
+  top: 20px;
+  left: 161px;
+  -webkit-animation: 2.4s flicker infinite;
+          animation: 2.4s flicker infinite;
+}
+.center .star7 {
+  top: 238px;
+  left: 61px;
+  -webkit-animation: 3.9s flicker infinite;
+          animation: 3.9s flicker infinite;
+}
+.center .star8 {
+  top: 286px;
+  left: 139px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star9 {
+  top: 199px;
+  left: 50px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star10 {
+  top: 198px;
+  left: 283px;
+  -webkit-animation: 3.9s flicker infinite;
+          animation: 3.9s flicker infinite;
+}
+.center .star11 {
+  top: 249px;
+  left: 85px;
+  -webkit-animation: 3.6s flicker infinite;
+          animation: 3.6s flicker infinite;
+}
+.center .star12 {
+  top: 191px;
+  left: 80px;
+  -webkit-animation: 3.1s flicker infinite;
+          animation: 3.1s flicker infinite;
+}
+.center .star13 {
+  top: 254px;
+  left: 31px;
+  -webkit-animation: 2.1s flicker infinite;
+          animation: 2.1s flicker infinite;
+}
+.center .star14 {
+  top: 41px;
+  left: 21px;
+  -webkit-animation: 2.9s flicker infinite;
+          animation: 2.9s flicker infinite;
+}
+.center .star15 {
+  top: 177px;
+  left: 174px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star16 {
+  top: 262px;
+  left: 284px;
+  -webkit-animation: 2.7s flicker infinite;
+          animation: 2.7s flicker infinite;
+}
+.center .star17 {
+  top: 99px;
+  left: 215px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star18 {
+  top: 247px;
+  left: 255px;
+  -webkit-animation: 2.4s flicker infinite;
+          animation: 2.4s flicker infinite;
+}
+.center .star19 {
+  top: 35px;
+  left: 130px;
+  -webkit-animation: 3.7s flicker infinite;
+          animation: 3.7s flicker infinite;
+}
+.center .star20 {
+  top: 216px;
+  left: 207px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star21 {
+  top: 286px;
+  left: 148px;
+  -webkit-animation: 2.9s flicker infinite;
+          animation: 2.9s flicker infinite;
+}
+.center .star22 {
+  top: 291px;
+  left: 116px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star23 {
+  top: 169px;
+  left: 226px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star24 {
+  top: 109px;
+  left: 63px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star25 {
+  top: 14px;
+  left: 61px;
+  -webkit-animation: 3.9s flicker infinite;
+          animation: 3.9s flicker infinite;
+}
+.center .star26 {
+  top: 106px;
+  left: 13px;
+  -webkit-animation: 3.6s flicker infinite;
+          animation: 3.6s flicker infinite;
+}
+.center .star27 {
+  top: 267px;
+  left: 265px;
+  -webkit-animation: 2.6s flicker infinite;
+          animation: 2.6s flicker infinite;
+}
+.center .star28 {
+  top: 296px;
+  left: 119px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star29 {
+  top: 299px;
+  left: 20px;
+  -webkit-animation: 3.2s flicker infinite;
+          animation: 3.2s flicker infinite;
+}
+.center .star30 {
+  top: 291px;
+  left: 5px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star31 {
+  top: 7px;
+  left: 173px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star32 {
+  top: 227px;
+  left: 81px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star33 {
+  top: 24px;
+  left: 65px;
+  -webkit-animation: 2.4s flicker infinite;
+          animation: 2.4s flicker infinite;
+}
+.center .star34 {
+  top: 63px;
+  left: 25px;
+  -webkit-animation: 2.5s flicker infinite;
+          animation: 2.5s flicker infinite;
+}
+.center .star35 {
+  top: 251px;
+  left: 86px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star36 {
+  top: 44px;
+  left: 65px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star37 {
+  top: 121px;
+  left: 82px;
+  -webkit-animation: 2.9s flicker infinite;
+          animation: 2.9s flicker infinite;
+}
+.center .star38 {
+  top: 19px;
+  left: 236px;
+  -webkit-animation: 3.1s flicker infinite;
+          animation: 3.1s flicker infinite;
+}
+.center .star39 {
+  top: 194px;
+  left: 165px;
+  -webkit-animation: 3.1s flicker infinite;
+          animation: 3.1s flicker infinite;
+}
+.center .star40 {
+  top: 201px;
+  left: 252px;
+  -webkit-animation: 3s flicker infinite;
+          animation: 3s flicker infinite;
+}
+.center .star41 {
+  top: 157px;
+  left: 74px;
+  -webkit-animation: 2.8s flicker infinite;
+          animation: 2.8s flicker infinite;
+}
+.center .star42 {
+  top: 136px;
+  left: 43px;
+  -webkit-animation: 3.8s flicker infinite;
+          animation: 3.8s flicker infinite;
+}
+.center .star43 {
+  top: 250px;
+  left: 170px;
+  -webkit-animation: 2.5s flicker infinite;
+          animation: 2.5s flicker infinite;
+}
+.center .star44 {
+  top: 287px;
+  left: 216px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star45 {
+  top: 118px;
+  left: 240px;
+  -webkit-animation: 2.4s flicker infinite;
+          animation: 2.4s flicker infinite;
+}
+.center .star46 {
+  top: 121px;
+  left: 299px;
+  -webkit-animation: 3.9s flicker infinite;
+          animation: 3.9s flicker infinite;
+}
+.center .star47 {
+  top: 32px;
+  left: 225px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star48 {
+  top: 257px;
+  left: 179px;
+  -webkit-animation: 3.7s flicker infinite;
+          animation: 3.7s flicker infinite;
+}
+.center .star49 {
+  top: 85px;
+  left: 288px;
+  -webkit-animation: 2.7s flicker infinite;
+          animation: 2.7s flicker infinite;
+}
+.center .star50 {
+  top: 104px;
+  left: 163px;
+  -webkit-animation: 2.7s flicker infinite;
+          animation: 2.7s flicker infinite;
+}
+.center .star51 {
+  top: 13px;
+  left: 67px;
+  -webkit-animation: 3.3s flicker infinite;
+          animation: 3.3s flicker infinite;
+}
+.center .star52 {
+  top: 66px;
+  left: 161px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star53 {
+  top: 126px;
+  left: 62px;
+  -webkit-animation: 2.9s flicker infinite;
+          animation: 2.9s flicker infinite;
+}
+.center .star54 {
+  top: 211px;
+  left: 224px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star55 {
+  top: 255px;
+  left: 240px;
+  -webkit-animation: 2.5s flicker infinite;
+          animation: 2.5s flicker infinite;
+}
+.center .star56 {
+  top: 57px;
+  left: 6px;
+  -webkit-animation: 2.5s flicker infinite;
+          animation: 2.5s flicker infinite;
+}
+.center .star57 {
+  top: 210px;
+  left: 167px;
+  -webkit-animation: 2.9s flicker infinite;
+          animation: 2.9s flicker infinite;
+}
+.center .star58 {
+  top: 43px;
+  left: 76px;
+  -webkit-animation: 3.2s flicker infinite;
+          animation: 3.2s flicker infinite;
+}
+.center .star59 {
+  top: 278px;
+  left: 12px;
+  -webkit-animation: 3.1s flicker infinite;
+          animation: 3.1s flicker infinite;
+}
+.center .star60 {
+  top: 174px;
+  left: 18px;
+  -webkit-animation: 2.1s flicker infinite;
+          animation: 2.1s flicker infinite;
+}
+.center .star61 {
+  top: 195px;
+  left: 290px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star62 {
+  top: 99px;
+  left: 172px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star63 {
+  top: 61px;
+  left: 25px;
+  -webkit-animation: 2.8s flicker infinite;
+          animation: 2.8s flicker infinite;
+}
+.center .star64 {
+  top: 207px;
+  left: 130px;
+  -webkit-animation: 3.1s flicker infinite;
+          animation: 3.1s flicker infinite;
+}
+.center .star65 {
+  top: 262px;
+  left: 275px;
+  -webkit-animation: 3.7s flicker infinite;
+          animation: 3.7s flicker infinite;
+}
+.center .star66 {
+  top: 74px;
+  left: 71px;
+  -webkit-animation: 2.4s flicker infinite;
+          animation: 2.4s flicker infinite;
+}
+.center .star67 {
+  top: 115px;
+  left: 162px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star68 {
+  top: 5px;
+  left: 117px;
+  -webkit-animation: 2.4s flicker infinite;
+          animation: 2.4s flicker infinite;
+}
+.center .star69 {
+  top: 3px;
+  left: 296px;
+  -webkit-animation: 3.8s flicker infinite;
+          animation: 3.8s flicker infinite;
+}
+.center .star70 {
+  top: 7px;
+  left: 213px;
+  -webkit-animation: 3.2s flicker infinite;
+          animation: 3.2s flicker infinite;
+}
+.center .star71 {
+  top: 73px;
+  left: 184px;
+  -webkit-animation: 3.6s flicker infinite;
+          animation: 3.6s flicker infinite;
+}
+.center .star72 {
+  top: 252px;
+  left: 122px;
+  -webkit-animation: 3.3s flicker infinite;
+          animation: 3.3s flicker infinite;
+}
+.center .star73 {
+  top: 283px;
+  left: 163px;
+  -webkit-animation: 2.8s flicker infinite;
+          animation: 2.8s flicker infinite;
+}
+.center .star74 {
+  top: 194px;
+  left: 98px;
+  -webkit-animation: 2.1s flicker infinite;
+          animation: 2.1s flicker infinite;
+}
+.center .star75 {
+  top: 39px;
+  left: 51px;
+  -webkit-animation: 3.2s flicker infinite;
+          animation: 3.2s flicker infinite;
+}
+.center .star76 {
+  top: 171px;
+  left: 9px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star77 {
+  top: 147px;
+  left: 138px;
+  -webkit-animation: 3s flicker infinite;
+          animation: 3s flicker infinite;
+}
+.center .star78 {
+  top: 1px;
+  left: 248px;
+  -webkit-animation: 3.9s flicker infinite;
+          animation: 3.9s flicker infinite;
+}
+.center .star79 {
+  top: 205px;
+  left: 82px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star80 {
+  top: 166px;
+  left: 155px;
+  -webkit-animation: 2.9s flicker infinite;
+          animation: 2.9s flicker infinite;
+}
+.center .star81 {
+  top: 216px;
+  left: 182px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star82 {
+  top: 28px;
+  left: 283px;
+  -webkit-animation: 2.5s flicker infinite;
+          animation: 2.5s flicker infinite;
+}
+.center .star83 {
+  top: 254px;
+  left: 72px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star84 {
+  top: 151px;
+  left: 110px;
+  -webkit-animation: 4s flicker infinite;
+          animation: 4s flicker infinite;
+}
+.center .star85 {
+  top: 156px;
+  left: 149px;
+  -webkit-animation: 3.2s flicker infinite;
+          animation: 3.2s flicker infinite;
+}
+.center .star86 {
+  top: 69px;
+  left: 39px;
+  -webkit-animation: 2.9s flicker infinite;
+          animation: 2.9s flicker infinite;
+}
+.center .star87 {
+  top: 24px;
+  left: 276px;
+  -webkit-animation: 2.4s flicker infinite;
+          animation: 2.4s flicker infinite;
+}
+.center .star88 {
+  top: 34px;
+  left: 114px;
+  -webkit-animation: 4s flicker infinite;
+          animation: 4s flicker infinite;
+}
+.center .star89 {
+  top: 199px;
+  left: 163px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star90 {
+  top: 269px;
+  left: 176px;
+  -webkit-animation: 2.9s flicker infinite;
+          animation: 2.9s flicker infinite;
+}
+.center .star91 {
+  top: 259px;
+  left: 270px;
+  -webkit-animation: 3.2s flicker infinite;
+          animation: 3.2s flicker infinite;
+}
+.center .star92 {
+  top: 230px;
+  left: 238px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .star93 {
+  top: 18px;
+  left: 118px;
+  -webkit-animation: 3.4s flicker infinite;
+          animation: 3.4s flicker infinite;
+}
+.center .star94 {
+  top: 272px;
+  left: 191px;
+  -webkit-animation: 2.4s flicker infinite;
+          animation: 2.4s flicker infinite;
+}
+.center .star95 {
+  top: 47px;
+  left: 174px;
+  -webkit-animation: 4s flicker infinite;
+          animation: 4s flicker infinite;
+}
+.center .star96 {
+  top: 13px;
+  left: 159px;
+  -webkit-animation: 2.1s flicker infinite;
+          animation: 2.1s flicker infinite;
+}
+.center .star97 {
+  top: 168px;
+  left: 286px;
+  -webkit-animation: 3.8s flicker infinite;
+          animation: 3.8s flicker infinite;
+}
+.center .star98 {
+  top: 95px;
+  left: 25px;
+  -webkit-animation: 3.6s flicker infinite;
+          animation: 3.6s flicker infinite;
+}
+.center .star99 {
+  top: 197px;
+  left: 268px;
+  -webkit-animation: 2.2s flicker infinite;
+          animation: 2.2s flicker infinite;
+}
+.center .star100 {
+  top: 85px;
+  left: 275px;
+  -webkit-animation: 3.5s flicker infinite;
+          animation: 3.5s flicker infinite;
+}
+.center .shooting-star {
+  position: absolute;
+  height: 50px;
+  width: 2px;
+  background: linear-gradient(#FFF, transparent);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-animation: shoot 3s ease-in-out infinite;
+          animation: shoot 3s ease-in-out infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shoot {
+  0% {
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    height: 50px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 75%;
+    left: 75%;
+    opacity: 0;
+    height: 0px;
+  }
+}
+@keyframes shoot {
+  0% {
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    height: 50px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 75%;
+    left: 75%;
+    opacity: 0;
+    height: 0px;
+  }
+}

@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #2c3e50;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 90%;
+  width: 150px;
+}
+.center .dot {
+  height: 15px;
+  width: 15px;
+  background: red;
+  border-radius: 50%;
+  margin: 3px 0;
+  background: #FFF;
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+}
+.center .dot-1 {
+  -webkit-animation: move 801ms ease-in-out infinite;
+          animation: move 801ms ease-in-out infinite;
+}
+.center .dot-2 {
+  -webkit-animation: move 802ms ease-in-out infinite;
+          animation: move 802ms ease-in-out infinite;
+}
+.center .dot-3 {
+  -webkit-animation: move 803ms ease-in-out infinite;
+          animation: move 803ms ease-in-out infinite;
+}
+.center .dot-4 {
+  -webkit-animation: move 804ms ease-in-out infinite;
+          animation: move 804ms ease-in-out infinite;
+}
+.center .dot-5 {
+  -webkit-animation: move 805ms ease-in-out infinite;
+          animation: move 805ms ease-in-out infinite;
+}
+.center .dot-6 {
+  -webkit-animation: move 806ms ease-in-out infinite;
+          animation: move 806ms ease-in-out infinite;
+}
+.center .dot-7 {
+  -webkit-animation: move 807ms ease-in-out infinite;
+          animation: move 807ms ease-in-out infinite;
+}
+.center .dot-8 {
+  -webkit-animation: move 808ms ease-in-out infinite;
+          animation: move 808ms ease-in-out infinite;
+}
+.center .dot-9 {
+  -webkit-animation: move 809ms ease-in-out infinite;
+          animation: move 809ms ease-in-out infinite;
+}
+.center .dot-10 {
+  -webkit-animation: move 810ms ease-in-out infinite;
+          animation: move 810ms ease-in-out infinite;
+}
+.center .dot-11 {
+  -webkit-animation: move 811ms ease-in-out infinite;
+          animation: move 811ms ease-in-out infinite;
+}
+.center .dot-12 {
+  -webkit-animation: move 812ms ease-in-out infinite;
+          animation: move 812ms ease-in-out infinite;
+}
+.center .dot-13 {
+  -webkit-animation: move 813ms ease-in-out infinite;
+          animation: move 813ms ease-in-out infinite;
+}
+.center .dot-14 {
+  -webkit-animation: move 814ms ease-in-out infinite;
+          animation: move 814ms ease-in-out infinite;
+}
+.center .dot-15 {
+  -webkit-animation: move 815ms ease-in-out infinite;
+          animation: move 815ms ease-in-out infinite;
+}
+.center .dot-16 {
+  -webkit-animation: move 816ms ease-in-out infinite;
+          animation: move 816ms ease-in-out infinite;
+}
+.center .dot-17 {
+  -webkit-animation: move 817ms ease-in-out infinite;
+          animation: move 817ms ease-in-out infinite;
+}
+.center .dot-18 {
+  -webkit-animation: move 818ms ease-in-out infinite;
+          animation: move 818ms ease-in-out infinite;
+}
+.center .dot-19 {
+  -webkit-animation: move 819ms ease-in-out infinite;
+          animation: move 819ms ease-in-out infinite;
+}
+.center .dot-20 {
+  -webkit-animation: move 820ms ease-in-out infinite;
+          animation: move 820ms ease-in-out infinite;
+}
+
+@-webkit-keyframes move {
+  0%, 100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(135px, 0, 0);
+            transform: translate3d(135px, 0, 0);
+  }
+}
+
+@keyframes move {
+  0%, 100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(135px, 0, 0);
+            transform: translate3d(135px, 0, 0);
+  }
+}

@@ -1,0 +1,49 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #2ecc71;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+input {
+	display: none;
+}
+
+.square {
+	box-sizing: border-box;
+	height: 20px;
+	width: 20px;
+	border: 1px solid lighten(#2ecc71, 5%);
+	&:hover {
+		cursor: pointer;
+		background: darken(#2ecc71, 5%);
+	}
+}
+
+@for $i from 1 through 400 {
+	#square-#{$i}:checked ~ .square-#{$i} {
+		background: #FFF;
+		border: 1px solid #FFF;
+	}
+}

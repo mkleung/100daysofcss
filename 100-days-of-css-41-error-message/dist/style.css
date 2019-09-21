@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #34495e;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#check {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+}
+#check:hover {
+  cursor: pointer;
+}
+
+#check:checked ~ .center {
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  transition: 1s ease;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  height: 250px;
+  width: 250px;
+  background: white;
+  box-shadow: 0 15px 15px 0 black;
+  -webkit-animation: appear 1s ease;
+          animation: appear 1s ease;
+  transition: 1s ease;
+}
+.center .error {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+.center .error .exclamation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #FFF;
+  font-size: 2em;
+  font-weight: bold;
+  -webkit-transform: translate(-50%, 15%);
+          transform: translate(-50%, 15%);
+}
+.center .error .triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  height: 50px;
+  width: 50px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.center .text {
+  height: 100px;
+  text-align: center;
+}
+.center .button {
+  border: none;
+  color: #FFF;
+  background: crimson;
+  font-weight: bold;
+  height: 50px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.center .button:hover {
+  cursor: pointer;
+  background: #ad102f;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}

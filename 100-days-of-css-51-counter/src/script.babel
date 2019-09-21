@@ -1,0 +1,79 @@
+class Counter extends React.Component {
+	  constructor(props) {
+    super(props);
+    this.state = { 
+			seconds: 0,
+			paused: false
+		};
+  }
+
+  tick() {
+    this.setState(state => ({
+      seconds: state.seconds + 1
+    }));
+  }
+
+  componentDidMount() {
+    this.startTimer();
+  }
+	
+	componentWillUnmount() {
+    this.stopTimer();
+  }
+	
+	startTimer = () =>{
+		this.interval = setInterval(() => this.tick(),1000);
+    this.setState({ paused : false });
+	}
+  
+  stopTimer = () => {
+  	clearInterval( this.interval );
+    this.setState({ paused : true });
+	}
+	
+  render() {
+		let seconds = this.state.seconds;
+		let pre = "";
+		switch (true) {
+				case (seconds < 10):
+						pre = "000";
+						break;
+				case (seconds < 100):
+						pre = "00";
+						break;
+				case (seconds < 1000):
+						pre = "0";
+						break;
+				default:
+						pre = "";
+						break;
+		}
+		let time =  pre + seconds;
+
+    return (
+			<React.Fragment>
+				<div className="timer">{time}</div>
+				
+		{this.state.paused &&
+						<button onClick={()=>this.startTimer()} className="timerBtn">	
+					<i class="material-icons">play_arrow</i>
+				</button>
+		}
+		{!this.state.paused &&
+				
+				<button onClick={()=>this.stopTimer()} className="timerBtn">	
+					<i class="material-icons">pause</i>
+				</button>
+	}
+				
+
+
+			</React.Fragment>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Counter />,
+  document.getElementById('counter')
+);

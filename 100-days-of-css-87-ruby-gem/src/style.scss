@@ -1,0 +1,131 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+$red: #d63031;
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  margin-top: -192px;
+  margin-left: -175px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #f1c40f;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.gem {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+	
+	.bottom-left {
+		position: absolute;
+		left: 0;
+		bottom: -100px;
+		border-style: solid;
+		border-width: 100px 0px 100px 100px;
+		border-color: darken($red, 20%) transparent transparent transparent;
+	}
+	.bottom-middle {
+		position: absolute;
+		z-index: 10;
+		left: 50px;
+		bottom: -100px;
+		border-style: solid;
+		border-width: 100px 50px 100px 50px;
+		border-color:  darken($red, 10%) transparent transparent transparent;
+	}
+	.bottom-right {
+		position: absolute;
+		left: 100px;
+		bottom: 0px;
+		border-style: solid;
+		border-width: 100px 100px 0px 0px;
+		border-color: lighten($red, 0%) transparent transparent transparent;
+	}
+	
+	.top-middle {
+		position: absolute;
+		left: 50px;
+		bottom: 100px;
+		border-style: solid;
+		border-width: 50px 50px 40px 50px;
+		border-color:  transparent transparent lighten($red, 0%) transparent;
+		z-index: 10;
+	}
+	.top-left {
+		position: absolute;
+		left: 0px;
+		bottom: 100px;
+		border-style: solid;
+		border-width: 25px 25px 40px 25px;
+		border-color:  transparent transparent darken($red, 10%) transparent;
+		z-index:10;
+	}
+	.top-right {
+		position: absolute;
+		left: 150px;
+		bottom: 100px;
+		border-style: solid;
+		border-width: 25px 25px 40px 25px;
+		border-color:  transparent transparent darken($red, 10%) transparent;
+		z-index: 10;
+	}
+	.square-left {
+		background: lighten($red, 10%);
+		height: 40px;
+		width: 75px;
+		position: absolute;
+		top: 60px;
+		left: 25px;
+		z-index: 1;
+	}
+	.square-right {
+		background: lighten($red, 20%);
+		height: 40px;
+		width: 75px;
+		position: absolute;
+		top: 60px;
+		left: 100px;
+		z-index: 1;
+		.bling {
+			position: absolute;
+			width: 5px;
+			height: 40px;
+			top: 0px;
+			left: 5px;
+			animation: bling 3s linear infinite;
+      transform: skew(20deg);
+      background: #fff;
+			
+			z-index: 100;
+		}
+	}
+}
+
+@keyframes bling {
+	0% {
+		top: 0px;
+		left: 5px;
+	}
+
+	5%, 100% {
+		top:0px;
+		left: 80px;
+		opacity: 0;
+	}
+}

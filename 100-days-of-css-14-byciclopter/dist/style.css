@@ -1,0 +1,277 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #f6e58d;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  -webkit-animation: bounce 0.5s ease-in-out infinite;
+          animation: bounce 0.5s ease-in-out infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+.center .body {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  border: 5px solid black;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%) skew(-30deg);
+          transform: translate(-50%, -50%) skew(-30deg);
+}
+.center .seatTube {
+  position: absolute;
+  left: 85px;
+  top: 50px;
+  height: 80px;
+  width: 5px;
+  border-radius: 5px;
+  background: black;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+.center .seatTube:before {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background: black;
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  left: -10px;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+.center .pedal {
+  position: absolute;
+  left: 95px;
+  top: 118px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background: #f6e58d;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+.center .backWheel {
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: transparent;
+  border: 5px solid black;
+}
+.center .headTube {
+  position: absolute;
+  right: 55px;
+  top: 50px;
+  height: 80px;
+  width: 5px;
+  border-radius: 5px;
+  background: black;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+.center .headTube:before {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background: black;
+  position: absolute;
+  top: 5px;
+  border-radius: 5px;
+  left: 0px;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+.center .headTube:after {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 5px solid black;
+  border-left: 0;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+.center .frontWheel {
+  position: absolute;
+  top: 90px;
+  right: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: transparent;
+  border: 5px solid black;
+}
+.center .wheel .spin {
+  position: absolute;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  top: 0px;
+  left: 28px;
+  height: 60px;
+  width: 1px;
+  background: black;
+}
+.center .wheel .s1 {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation: rotate1 0.5s linear infinite;
+          animation: rotate1 0.5s linear infinite;
+}
+.center .wheel .s2 {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  -webkit-animation: rotate2 0.5s linear infinite;
+          animation: rotate2 0.5s linear infinite;
+}
+.center .wheel .s3 {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  -webkit-animation: rotate3 0.5s linear infinite;
+          animation: rotate3 0.5s linear infinite;
+}
+.center .ground {
+  position: absolute;
+  bottom: 35px;
+  height: 5px;
+  border-radius: 5px;
+  background: black;
+}
+.center .g1 {
+  width: 10px;
+  right: -150px;
+  -webkit-animation: move1 1s linear infinite;
+          animation: move1 1s linear infinite;
+}
+.center .g2 {
+  width: 25px;
+  right: -50px;
+  -webkit-animation: move2 1s linear infinite;
+          animation: move2 1s linear infinite;
+}
+.center .g3 {
+  width: 40px;
+  right: -100px;
+  -webkit-animation: move3 2s linear infinite;
+          animation: move3 2s linear infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scaleY(1);
+            transform: translate(-50%, -50%) scaleY(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scaleY(1.02);
+            transform: translate(-50%, -50%) scaleY(1.02);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scaleY(1);
+            transform: translate(-50%, -50%) scaleY(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scaleY(1.02);
+            transform: translate(-50%, -50%) scaleY(1.02);
+  }
+}
+@-webkit-keyframes rotate1 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate1 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate2 {
+  100% {
+    -webkit-transform: rotate(420deg);
+            transform: rotate(420deg);
+  }
+}
+@keyframes rotate2 {
+  100% {
+    -webkit-transform: rotate(420deg);
+            transform: rotate(420deg);
+  }
+}
+@-webkit-keyframes rotate3 {
+  100% {
+    -webkit-transform: rotate(480deg);
+            transform: rotate(480deg);
+  }
+}
+@keyframes rotate3 {
+  100% {
+    -webkit-transform: rotate(480deg);
+            transform: rotate(480deg);
+  }
+}
+@-webkit-keyframes move1 {
+  100% {
+    right: 200px;
+  }
+}
+@keyframes move1 {
+  100% {
+    right: 200px;
+  }
+}
+@-webkit-keyframes move2 {
+  100% {
+    right: 300px;
+  }
+}
+@keyframes move2 {
+  100% {
+    right: 300px;
+  }
+}
+@-webkit-keyframes move3 {
+  100% {
+    right: 250px;
+  }
+}
+@keyframes move3 {
+  100% {
+    right: 250px;
+  }
+}

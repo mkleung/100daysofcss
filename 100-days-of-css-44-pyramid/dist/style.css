@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #34495e;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 5px;
+  width: 5px;
+  border: 1px solid #2ecc71;
+}
+
+.square-1 {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.0333333333s alternate infinite;
+          animation: move 1s ease 0.0333333333s alternate infinite;
+}
+
+.square-2 {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.0666666667s alternate infinite;
+          animation: move 1s ease 0.0666666667s alternate infinite;
+}
+
+.square-3 {
+  height: 45px;
+  width: 45px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.1s alternate infinite;
+          animation: move 1s ease 0.1s alternate infinite;
+}
+
+.square-4 {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.1333333333s alternate infinite;
+          animation: move 1s ease 0.1333333333s alternate infinite;
+}
+
+.square-5 {
+  height: 75px;
+  width: 75px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.1666666667s alternate infinite;
+          animation: move 1s ease 0.1666666667s alternate infinite;
+}
+
+.square-6 {
+  height: 90px;
+  width: 90px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.2s alternate infinite;
+          animation: move 1s ease 0.2s alternate infinite;
+}
+
+.square-7 {
+  height: 105px;
+  width: 105px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.2333333333s alternate infinite;
+          animation: move 1s ease 0.2333333333s alternate infinite;
+}
+
+.square-8 {
+  height: 120px;
+  width: 120px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.2666666667s alternate infinite;
+          animation: move 1s ease 0.2666666667s alternate infinite;
+}
+
+.square-9 {
+  height: 135px;
+  width: 135px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.3s alternate infinite;
+          animation: move 1s ease 0.3s alternate infinite;
+}
+
+.square-10 {
+  height: 150px;
+  width: 150px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.3333333333s alternate infinite;
+          animation: move 1s ease 0.3333333333s alternate infinite;
+}
+
+.square-11 {
+  height: 165px;
+  width: 165px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.3666666667s alternate infinite;
+          animation: move 1s ease 0.3666666667s alternate infinite;
+}
+
+.square-12 {
+  height: 180px;
+  width: 180px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.4s alternate infinite;
+          animation: move 1s ease 0.4s alternate infinite;
+}
+
+.square-13 {
+  height: 195px;
+  width: 195px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.4333333333s alternate infinite;
+          animation: move 1s ease 0.4333333333s alternate infinite;
+}
+
+.square-14 {
+  height: 210px;
+  width: 210px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.4666666667s alternate infinite;
+          animation: move 1s ease 0.4666666667s alternate infinite;
+}
+
+.square-15 {
+  height: 225px;
+  width: 225px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.5s alternate infinite;
+          animation: move 1s ease 0.5s alternate infinite;
+}
+
+.square-16 {
+  height: 240px;
+  width: 240px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.5333333333s alternate infinite;
+          animation: move 1s ease 0.5333333333s alternate infinite;
+}
+
+.square-17 {
+  height: 255px;
+  width: 255px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.5666666667s alternate infinite;
+          animation: move 1s ease 0.5666666667s alternate infinite;
+}
+
+.square-18 {
+  height: 270px;
+  width: 270px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.6s alternate infinite;
+          animation: move 1s ease 0.6s alternate infinite;
+}
+
+.square-19 {
+  height: 285px;
+  width: 285px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.6333333333s alternate infinite;
+          animation: move 1s ease 0.6333333333s alternate infinite;
+}
+
+.square-20 {
+  height: 300px;
+  width: 300px;
+  border: 1px solid #54d98c;
+  -webkit-animation: move 1s ease 0.6666666667s alternate infinite;
+          animation: move 1s ease 0.6666666667s alternate infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    border: 1px solid #3498db;
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    border: 1px solid #2ecc71;
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    border: 1px solid #3498db;
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    border: 1px solid #2ecc71;
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+  }
+}

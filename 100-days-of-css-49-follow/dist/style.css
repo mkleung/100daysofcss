@@ -1,0 +1,1084 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  background: #34495e;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.square:hover {
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #e74c3c;
+  -webkit-transform: translate(160px, 160px);
+          transform: translate(160px, 160px);
+  transition: all 1s ease;
+}
+.circle:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
+  height: 40px;
+  width: 40px;
+  border: 5px solid #e74c3c;
+  border-radius: 50%;
+  -webkit-animation: explode 1s ease-in-out infinite;
+          animation: explode 1s ease-in-out infinite;
+}
+
+.squarea-0 {
+  top: 0px;
+  left: 0px;
+}
+.squarea-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-0 {
+  top: 40px;
+  left: 0px;
+}
+.squareb-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 40px);
+          transform: translate(0px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-0 {
+  top: 80px;
+  left: 0px;
+}
+.squarec-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 80px);
+          transform: translate(0px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-0 {
+  top: 120px;
+  left: 0px;
+}
+.squared-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 120px);
+          transform: translate(0px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-0 {
+  top: 160px;
+  left: 0px;
+}
+.squaree-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 160px);
+          transform: translate(0px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-0 {
+  top: 200px;
+  left: 0px;
+}
+.squaref-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 200px);
+          transform: translate(0px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-0 {
+  top: 240px;
+  left: 0px;
+}
+.squareg-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 240px);
+          transform: translate(0px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-0 {
+  top: 280px;
+  left: 0px;
+}
+.squareh-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 280px);
+          transform: translate(0px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-0 {
+  top: 320px;
+  left: 0px;
+}
+.squarei-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 320px);
+          transform: translate(0px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-0 {
+  top: 360px;
+  left: 0px;
+}
+.squarej-0:hover ~ .circle {
+  -webkit-transform: translate(0px, 360px);
+          transform: translate(0px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-1 {
+  top: 0px;
+  left: 40px;
+}
+.squarea-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 0px);
+          transform: translate(40px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-1 {
+  top: 40px;
+  left: 40px;
+}
+.squareb-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 40px);
+          transform: translate(40px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-1 {
+  top: 80px;
+  left: 40px;
+}
+.squarec-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 80px);
+          transform: translate(40px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-1 {
+  top: 120px;
+  left: 40px;
+}
+.squared-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 120px);
+          transform: translate(40px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-1 {
+  top: 160px;
+  left: 40px;
+}
+.squaree-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 160px);
+          transform: translate(40px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-1 {
+  top: 200px;
+  left: 40px;
+}
+.squaref-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 200px);
+          transform: translate(40px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-1 {
+  top: 240px;
+  left: 40px;
+}
+.squareg-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 240px);
+          transform: translate(40px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-1 {
+  top: 280px;
+  left: 40px;
+}
+.squareh-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 280px);
+          transform: translate(40px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-1 {
+  top: 320px;
+  left: 40px;
+}
+.squarei-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 320px);
+          transform: translate(40px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-1 {
+  top: 360px;
+  left: 40px;
+}
+.squarej-1:hover ~ .circle {
+  -webkit-transform: translate(40px, 360px);
+          transform: translate(40px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-2 {
+  top: 0px;
+  left: 80px;
+}
+.squarea-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 0px);
+          transform: translate(80px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-2 {
+  top: 40px;
+  left: 80px;
+}
+.squareb-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 40px);
+          transform: translate(80px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-2 {
+  top: 80px;
+  left: 80px;
+}
+.squarec-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 80px);
+          transform: translate(80px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-2 {
+  top: 120px;
+  left: 80px;
+}
+.squared-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 120px);
+          transform: translate(80px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-2 {
+  top: 160px;
+  left: 80px;
+}
+.squaree-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 160px);
+          transform: translate(80px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-2 {
+  top: 200px;
+  left: 80px;
+}
+.squaref-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 200px);
+          transform: translate(80px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-2 {
+  top: 240px;
+  left: 80px;
+}
+.squareg-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 240px);
+          transform: translate(80px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-2 {
+  top: 280px;
+  left: 80px;
+}
+.squareh-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 280px);
+          transform: translate(80px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-2 {
+  top: 320px;
+  left: 80px;
+}
+.squarei-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 320px);
+          transform: translate(80px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-2 {
+  top: 360px;
+  left: 80px;
+}
+.squarej-2:hover ~ .circle {
+  -webkit-transform: translate(80px, 360px);
+          transform: translate(80px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-3 {
+  top: 0px;
+  left: 120px;
+}
+.squarea-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 0px);
+          transform: translate(120px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-3 {
+  top: 40px;
+  left: 120px;
+}
+.squareb-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 40px);
+          transform: translate(120px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-3 {
+  top: 80px;
+  left: 120px;
+}
+.squarec-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 80px);
+          transform: translate(120px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-3 {
+  top: 120px;
+  left: 120px;
+}
+.squared-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 120px);
+          transform: translate(120px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-3 {
+  top: 160px;
+  left: 120px;
+}
+.squaree-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 160px);
+          transform: translate(120px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-3 {
+  top: 200px;
+  left: 120px;
+}
+.squaref-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 200px);
+          transform: translate(120px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-3 {
+  top: 240px;
+  left: 120px;
+}
+.squareg-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 240px);
+          transform: translate(120px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-3 {
+  top: 280px;
+  left: 120px;
+}
+.squareh-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 280px);
+          transform: translate(120px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-3 {
+  top: 320px;
+  left: 120px;
+}
+.squarei-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 320px);
+          transform: translate(120px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-3 {
+  top: 360px;
+  left: 120px;
+}
+.squarej-3:hover ~ .circle {
+  -webkit-transform: translate(120px, 360px);
+          transform: translate(120px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-4 {
+  top: 0px;
+  left: 160px;
+}
+.squarea-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 0px);
+          transform: translate(160px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-4 {
+  top: 40px;
+  left: 160px;
+}
+.squareb-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 40px);
+          transform: translate(160px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-4 {
+  top: 80px;
+  left: 160px;
+}
+.squarec-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 80px);
+          transform: translate(160px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-4 {
+  top: 120px;
+  left: 160px;
+}
+.squared-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 120px);
+          transform: translate(160px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-4 {
+  top: 160px;
+  left: 160px;
+}
+.squaree-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 160px);
+          transform: translate(160px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-4 {
+  top: 200px;
+  left: 160px;
+}
+.squaref-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 200px);
+          transform: translate(160px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-4 {
+  top: 240px;
+  left: 160px;
+}
+.squareg-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 240px);
+          transform: translate(160px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-4 {
+  top: 280px;
+  left: 160px;
+}
+.squareh-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 280px);
+          transform: translate(160px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-4 {
+  top: 320px;
+  left: 160px;
+}
+.squarei-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 320px);
+          transform: translate(160px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-4 {
+  top: 360px;
+  left: 160px;
+}
+.squarej-4:hover ~ .circle {
+  -webkit-transform: translate(160px, 360px);
+          transform: translate(160px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-5 {
+  top: 0px;
+  left: 200px;
+}
+.squarea-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 0px);
+          transform: translate(200px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-5 {
+  top: 40px;
+  left: 200px;
+}
+.squareb-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 40px);
+          transform: translate(200px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-5 {
+  top: 80px;
+  left: 200px;
+}
+.squarec-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 80px);
+          transform: translate(200px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-5 {
+  top: 120px;
+  left: 200px;
+}
+.squared-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 120px);
+          transform: translate(200px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-5 {
+  top: 160px;
+  left: 200px;
+}
+.squaree-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 160px);
+          transform: translate(200px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-5 {
+  top: 200px;
+  left: 200px;
+}
+.squaref-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 200px);
+          transform: translate(200px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-5 {
+  top: 240px;
+  left: 200px;
+}
+.squareg-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 240px);
+          transform: translate(200px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-5 {
+  top: 280px;
+  left: 200px;
+}
+.squareh-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 280px);
+          transform: translate(200px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-5 {
+  top: 320px;
+  left: 200px;
+}
+.squarei-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 320px);
+          transform: translate(200px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-5 {
+  top: 360px;
+  left: 200px;
+}
+.squarej-5:hover ~ .circle {
+  -webkit-transform: translate(200px, 360px);
+          transform: translate(200px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-6 {
+  top: 0px;
+  left: 240px;
+}
+.squarea-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 0px);
+          transform: translate(240px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-6 {
+  top: 40px;
+  left: 240px;
+}
+.squareb-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 40px);
+          transform: translate(240px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-6 {
+  top: 80px;
+  left: 240px;
+}
+.squarec-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 80px);
+          transform: translate(240px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-6 {
+  top: 120px;
+  left: 240px;
+}
+.squared-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 120px);
+          transform: translate(240px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-6 {
+  top: 160px;
+  left: 240px;
+}
+.squaree-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 160px);
+          transform: translate(240px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-6 {
+  top: 200px;
+  left: 240px;
+}
+.squaref-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 200px);
+          transform: translate(240px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-6 {
+  top: 240px;
+  left: 240px;
+}
+.squareg-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 240px);
+          transform: translate(240px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-6 {
+  top: 280px;
+  left: 240px;
+}
+.squareh-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 280px);
+          transform: translate(240px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-6 {
+  top: 320px;
+  left: 240px;
+}
+.squarei-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 320px);
+          transform: translate(240px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-6 {
+  top: 360px;
+  left: 240px;
+}
+.squarej-6:hover ~ .circle {
+  -webkit-transform: translate(240px, 360px);
+          transform: translate(240px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-7 {
+  top: 0px;
+  left: 280px;
+}
+.squarea-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 0px);
+          transform: translate(280px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-7 {
+  top: 40px;
+  left: 280px;
+}
+.squareb-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 40px);
+          transform: translate(280px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-7 {
+  top: 80px;
+  left: 280px;
+}
+.squarec-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 80px);
+          transform: translate(280px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-7 {
+  top: 120px;
+  left: 280px;
+}
+.squared-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 120px);
+          transform: translate(280px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-7 {
+  top: 160px;
+  left: 280px;
+}
+.squaree-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 160px);
+          transform: translate(280px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-7 {
+  top: 200px;
+  left: 280px;
+}
+.squaref-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 200px);
+          transform: translate(280px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-7 {
+  top: 240px;
+  left: 280px;
+}
+.squareg-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 240px);
+          transform: translate(280px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-7 {
+  top: 280px;
+  left: 280px;
+}
+.squareh-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 280px);
+          transform: translate(280px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-7 {
+  top: 320px;
+  left: 280px;
+}
+.squarei-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 320px);
+          transform: translate(280px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-7 {
+  top: 360px;
+  left: 280px;
+}
+.squarej-7:hover ~ .circle {
+  -webkit-transform: translate(280px, 360px);
+          transform: translate(280px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-8 {
+  top: 0px;
+  left: 320px;
+}
+.squarea-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 0px);
+          transform: translate(320px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-8 {
+  top: 40px;
+  left: 320px;
+}
+.squareb-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 40px);
+          transform: translate(320px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-8 {
+  top: 80px;
+  left: 320px;
+}
+.squarec-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 80px);
+          transform: translate(320px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-8 {
+  top: 120px;
+  left: 320px;
+}
+.squared-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 120px);
+          transform: translate(320px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-8 {
+  top: 160px;
+  left: 320px;
+}
+.squaree-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 160px);
+          transform: translate(320px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-8 {
+  top: 200px;
+  left: 320px;
+}
+.squaref-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 200px);
+          transform: translate(320px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-8 {
+  top: 240px;
+  left: 320px;
+}
+.squareg-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 240px);
+          transform: translate(320px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-8 {
+  top: 280px;
+  left: 320px;
+}
+.squareh-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 280px);
+          transform: translate(320px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-8 {
+  top: 320px;
+  left: 320px;
+}
+.squarei-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 320px);
+          transform: translate(320px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-8 {
+  top: 360px;
+  left: 320px;
+}
+.squarej-8:hover ~ .circle {
+  -webkit-transform: translate(320px, 360px);
+          transform: translate(320px, 360px);
+  transition: all 1s ease;
+}
+
+.squarea-9 {
+  top: 0px;
+  left: 360px;
+}
+.squarea-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 0px);
+          transform: translate(360px, 0px);
+  transition: all 1s ease;
+}
+
+.squareb-9 {
+  top: 40px;
+  left: 360px;
+}
+.squareb-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 40px);
+          transform: translate(360px, 40px);
+  transition: all 1s ease;
+}
+
+.squarec-9 {
+  top: 80px;
+  left: 360px;
+}
+.squarec-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 80px);
+          transform: translate(360px, 80px);
+  transition: all 1s ease;
+}
+
+.squared-9 {
+  top: 120px;
+  left: 360px;
+}
+.squared-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 120px);
+          transform: translate(360px, 120px);
+  transition: all 1s ease;
+}
+
+.squaree-9 {
+  top: 160px;
+  left: 360px;
+}
+.squaree-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 160px);
+          transform: translate(360px, 160px);
+  transition: all 1s ease;
+}
+
+.squaref-9 {
+  top: 200px;
+  left: 360px;
+}
+.squaref-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 200px);
+          transform: translate(360px, 200px);
+  transition: all 1s ease;
+}
+
+.squareg-9 {
+  top: 240px;
+  left: 360px;
+}
+.squareg-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 240px);
+          transform: translate(360px, 240px);
+  transition: all 1s ease;
+}
+
+.squareh-9 {
+  top: 280px;
+  left: 360px;
+}
+.squareh-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 280px);
+          transform: translate(360px, 280px);
+  transition: all 1s ease;
+}
+
+.squarei-9 {
+  top: 320px;
+  left: 360px;
+}
+.squarei-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 320px);
+          transform: translate(360px, 320px);
+  transition: all 1s ease;
+}
+
+.squarej-9 {
+  top: 360px;
+  left: 360px;
+}
+.squarej-9:hover ~ .circle {
+  -webkit-transform: translate(360px, 360px);
+          transform: translate(360px, 360px);
+  transition: all 1s ease;
+}
+
+@-webkit-keyframes explode {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+}
+
+@keyframes explode {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+}

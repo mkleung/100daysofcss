@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #34495e;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-filter: contrast(25);
+          filter: contrast(25);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.center .bigcircle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100px;
+  width: 100px;
+  background: red;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.center .circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  background: red;
+  border-radius: 50%;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+.center .c1 {
+  height: 33px;
+  width: 33px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: 50px 50px;
+          transform-origin: 50px 50px;
+  -webkit-animation: rotate 4s ease-in-out infinite;
+          animation: rotate 4s ease-in-out infinite;
+}
+.center .c2 {
+  height: 38px;
+  width: 38px;
+  -webkit-transform: translate(-40%, -60%);
+          transform: translate(-40%, -60%);
+  -webkit-transform-origin: -50px -35px;
+          transform-origin: -50px -35px;
+  -webkit-animation: rotate 5s ease-in-out infinite;
+          animation: rotate 5s ease-in-out infinite;
+}
+.center .c3 {
+  height: 35px;
+  width: 35px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: -50px 50px;
+          transform-origin: -50px 50px;
+  -webkit-animation: rotate 8s ease-in-out infinite;
+          animation: rotate 8s ease-in-out infinite;
+}
+.center .c4 {
+  height: 38px;
+  width: 38px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: 40px -35px;
+          transform-origin: 40px -35px;
+  -webkit-animation: rotate 4s ease-in-out infinite;
+          animation: rotate 4s ease-in-out infinite;
+}
+.center .c5 {
+  height: 39px;
+  width: 39px;
+  -webkit-transform: translate(-40%, -40%);
+          transform: translate(-40%, -40%);
+  -webkit-transform-origin: 50px 50px;
+          transform-origin: 50px 50px;
+  -webkit-animation: rotate 10s ease-in-out infinite;
+          animation: rotate 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(#FDC830, #F37335);
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 300px;
+  widtH: 300px;
+  background: #FFF;
+  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+}
+.center .profile {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.center .profile .image {
+  height: 40%;
+}
+.center .profile .image .profile_img {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg/330px-Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: 0.5s ease-in-out;
+}
+.center .profile .image .profile_img:hover {
+  cursor: pointer;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+  transition: 0.5s ease-in-out;
+}
+.center .profile .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+.center .profile .title .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.center .profile .title .job {
+  font-size: 12px;
+}
+.center .profile .action {
+  height: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.center .profile .action .longBtn {
+  height: 30px;
+  width: 125px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid black;
+  transition: 0.5s ease;
+  font-weight: bold;
+}
+.center .profile .action .longBtn p {
+  position: absolute;
+  left: 30%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+.center .profile .action .longBtn:hover {
+  cursor: pointer;
+  background: black;
+  transition: 0.5s ease;
+  color: #FFF;
+}
+.center .profile .action .follow {
+  margin-bottom: 5px;
+}
+.center .profile .action .message {
+  margin-top: 5px;
+}
+.center .social {
+  width: 40%;
+  background: #fee395;
+  display: flex;
+  flex-direction: column;
+}
+.center .social .button {
+  text-align: center;
+  height: 33%;
+  width: 100%;
+  transition: 1s ease;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.center .social .button h2 {
+  margin-bottom: 0;
+}
+.center .social .button p {
+  margin-top: 0;
+  font-size: 12px;
+}
+.center .social .button:hover {
+  background: #FDC830;
+  transition: 1s ease;
+  cursor: pointer;
+}
+.center .social .likes {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #FFF;
+}

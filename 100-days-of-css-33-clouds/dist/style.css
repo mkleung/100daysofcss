@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.frame .label {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  z-index: 10;
+}
+.frame .label:hover {
+  cursor: pointer;
+}
+.frame .day {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #74b9ff;
+  z-index: 5;
+  opacity: 1;
+  -webkit-animation: day 5s ease infinite;
+          animation: day 5s ease infinite;
+}
+.frame .day .sun {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f6e58d;
+  box-shadow: 0 0 50px 0 #f6e58d;
+  z-index: 8;
+  -webkit-animation: sun 5s ease infinite;
+          animation: sun 5s ease infinite;
+}
+.frame .day .moon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  -webkit-transform: translate(-50%, 400%);
+          transform: translate(-50%, 400%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: inset 20px 20px 0 #FFF;
+  z-index: 8;
+  -webkit-animation: moon 5s ease infinite;
+          animation: moon 5s ease infinite;
+}
+.frame .c1 {
+  top: 300px;
+  left: 150px;
+  z-index: 10;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-animation: cloud1 5s infinite linear;
+          animation: cloud1 5s infinite linear;
+}
+.frame .cloud {
+  border-radius: 10px;
+  width: 45px;
+  height: 5px;
+  background: #CCC;
+  position: absolute;
+}
+.frame .cloud div {
+  box-shadow: inset -5px -5px 0 0 #CCC;
+  position: absolute;
+  border-radius: 50%;
+  background: #fafbf0;
+}
+.frame .cloud div:first-child {
+  width: 20px;
+  height: 20px;
+  left: -6px;
+  bottom: 0px;
+  z-index: 13;
+}
+.frame .cloud div:nth-child(2) {
+  width: 35px;
+  height: 35px;
+  left: 5px;
+  bottom: 0;
+  z-index: 12;
+}
+.frame .cloud div:nth-child(3) {
+  width: 25px;
+  height: 25px;
+  left: 33px;
+  bottom: 0;
+  z-index: 11;
+}
+
+@-webkit-keyframes cloud1 {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0) scale(1.5);
+            transform: translate3d(-250px, 0, 0) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate3d(250px, 0, 0) scale(1.5);
+            transform: translate3d(250px, 0, 0) scale(1.5);
+  }
+}
+
+@keyframes cloud1 {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0) scale(1.5);
+            transform: translate3d(-250px, 0, 0) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate3d(250px, 0, 0) scale(1.5);
+            transform: translate3d(250px, 0, 0) scale(1.5);
+  }
+}
+@-webkit-keyframes sun {
+  0%, 100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  20%, 70% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 350%);
+            transform: translate(-50%, 350%);
+  }
+}
+@keyframes sun {
+  0%, 100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  20%, 70% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 350%);
+            transform: translate(-50%, 350%);
+  }
+}
+@-webkit-keyframes moon {
+  0%, 100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 350%);
+            transform: translate(-50%, 350%);
+  }
+  20%, 70% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+@keyframes moon {
+  0%, 100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 350%);
+            transform: translate(-50%, 350%);
+  }
+  20%, 70% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+@-webkit-keyframes day {
+  0%,100% {
+    background: #74b9ff;
+  }
+  50% {
+    background: #30336b;
+  }
+}
+@keyframes day {
+  0%,100% {
+    background: #74b9ff;
+  }
+  50% {
+    background: #30336b;
+  }
+}

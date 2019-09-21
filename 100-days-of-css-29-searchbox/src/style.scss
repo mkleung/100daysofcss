@@ -1,0 +1,105 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+$blue: #3498db;
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: $blue;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+	position: relative;
+
+	height: 400px;
+	width: 400px;
+	
+	.result {
+		position: absolute;
+		color: #FFF;
+		font-weight: bold;
+		left: 50%;
+		top: 45%;
+		transform: translate(-50%, -50%);
+		text-align: left;
+	}
+	
+	.searchWrapper {
+		top: 30%;
+  	left: 50%;
+		transform: translate(-50%, -30%);
+		position: absolute;
+		&:before {
+				content: "";
+				position: absolute;
+				right: 15px;
+				top: 30%;
+				height: 10px;
+				width: 10px;
+				border-radius: 50%;
+				border: 3px solid lighten($blue, 10%);
+				z-index: 99;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				right: 12px;
+				top: 60%;
+				height: 3px;
+				width: 8px;
+				background: lighten($blue, 10%);
+				border-radius: 2px;
+				transform: rotate(45deg);
+			}
+		.search {
+			height: 40px;
+			padding: 5px 10px;
+			border: none;
+			box-shadow: 0 3px 5px 0 lighten(grey, 10%);
+		}
+	}
+		.list {
+			position: absolute;
+			height: auto;
+			width: 214px;
+			top: 150px;
+			left: 93px;
+			
+			background: transparent;
+			display: none;
+
+			ul {
+				padding-left: 0px;
+				list-style-type: none;
+				li {
+					padding: 2px 10px;
+					.selectItem {
+						cursor: pointer;
+						
+						&:hover {
+							color: $blue;
+						}
+					}
+				}
+			}
+		}
+		.active {
+			background: #FFF;
+			display: block;
+		}
+}
+

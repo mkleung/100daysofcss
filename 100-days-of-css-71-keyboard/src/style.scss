@@ -1,0 +1,114 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #2d3436;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.display {
+	position: fixed;
+	left: 50%;
+	top: 33%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	font-size: 75px;
+	text-align: center;
+	display: none;
+}
+
+.keyboard {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #FFF;
+	height: 200px;
+	width: 100%;
+	background: #636e72;
+
+	.row1  {
+		padding-top: 40px;
+		height: 40px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 85%;
+	}
+	.row2 {
+		height: 40px;
+		text-align:center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 77%;
+	}
+	.row3 {
+		height: 40px;
+		text-align:center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 62%;
+	}
+	.key {
+		
+		height: 34px;
+		width: 34px;
+		border-radius: 34px;
+		position: relative;
+		float: left;
+		color: #FFF;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+	
+		input {
+			visibility: hidden;
+			transform: scale(2);
+			background: #636e72;
+		}
+		input:checked ~ #q, input:checked ~ #w, input:checked ~ #e, input:checked ~ #r, input:checked ~ #t, input:checked ~ #y, input:checked ~ #u, input:checked ~ #i, input:checked ~ #o, input:checked ~ #p {
+    	display:block;
+		}
+		
+		input:checked ~ #a, input:checked ~ #s, input:checked ~ #d, input:checked ~ #f, input:checked ~ #g, input:checked ~ #h, input:checked ~ #j, input:checked ~ #k, input:checked ~ #l {
+    	display:block;
+		}
+		
+		input:checked ~ #z, input:checked ~ #x, input:checked ~ #c, input:checked ~ #v, input:checked ~ #b, input:checked ~ #b, input:checked ~ #n, input:checked ~ #m {
+    	display:block;
+		}
+		
+		label {
+			position:absolute;
+			top: 0px;
+			left: 0;
+			width: 34px;
+			height: 34px;
+			// background: red;
+			border-radius: 34px;
+			line-height: 30px;
+		}
+		label:hover{
+			cursor:pointer;
+		}
+	}
+	.key:hover{
+		background: rgba(255,255,255,0.5);
+	}
+}

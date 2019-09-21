@@ -1,0 +1,172 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	// overflow: hidden;
+  background: #34495e;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.square {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	box-sizing: border-box;
+	&:hover{
+		cursor:pointer;
+	}
+}
+.circle {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height:40px;
+	width: 40px;
+	border-radius: 50%;
+	background: #e74c3c;
+	transform:translate(160px,160px);
+	transition: all 1s ease;
+	
+	&:after {
+		content:"";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0.5);
+		height: 40px;
+		width: 40px;
+		border: 5px solid #e74c3c;
+		border-radius: 50%;
+		animation: explode 1s ease-in-out infinite;
+	}
+}
+
+@for $i from 0 through 9 {
+	$left: $i * 40;
+	$top: 0;
+
+	.squarea-#{$i} {		
+			top: $top+px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+px);
+				transition: all 1s ease;
+			}
+	}
+	
+	
+	.squareb-#{$i} {		
+			top: $top + 40px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+40px);
+				transition: all 1s ease;
+			}
+	}
+	
+	
+	.squarec-#{$i} {		
+			top: $top + 80px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+80px);
+				transition: all 1s ease;
+			}
+	}
+	
+	.squared-#{$i} {		
+			top: $top + 120px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+120px);
+				transition: all 1s ease;
+			}
+	}
+	
+	
+		.squaree-#{$i} {		
+			top: $top + 160px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+ 160px);
+				transition: all 1s ease;
+			}
+	}
+	
+		.squaref-#{$i} {
+			top: $top + 200px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+ 200px);
+				transition: all 1s ease;
+			}
+	}
+	
+	
+			.squareg-#{$i} {
+			top: $top + 240px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+ 240px);
+				transition: all 1s ease;
+			}
+	}
+	
+	
+			.squareh-#{$i} {
+			top: $top + 280px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+ 280px);
+				transition: all 1s ease;
+			}
+	}
+	
+	
+			.squarei-#{$i} {
+			top: $top + 320px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+ 320px);
+				transition: all 1s ease;
+			}
+	}
+	
+	
+		.squarej-#{$i} {
+			top: $top + 360px;
+			left: $left+px;
+			&:hover ~ .circle {
+				transform: translate($left+px,$top+ 360px);
+				transition: all 1s ease;
+			}
+	}
+}
+	
+
+
+@keyframes explode {
+	0% {
+		transform: translate(-50%, -50%) scale(.5);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(2);
+		opacity: 0;
+		filter: blur(5px);
+	}
+}

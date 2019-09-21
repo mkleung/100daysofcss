@@ -1,0 +1,110 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+$color: red;
+$background: #34495e;
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: $background;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	// filter:blur(15px) contrast(60);
+	filter: contrast(25);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	width: 400px;
+	height: 400px;
+	position: relative;
+	
+	.bigcircle {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 100px;
+		width: 100px;
+		background: $color;
+		border-radius: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.circle {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 40px;
+		width: 40px;
+		background: $color;
+		border-radius: 50%;
+		filter:blur(15px) 
+		
+	}
+	
+	.c1 {
+		height: 33px;
+		width: 33px;
+		transform: translate(-50%, -50%);
+		transform-origin: 50px 50px;
+		animation: rotate 4s ease-in-out infinite;
+	}
+	
+	.c2 {
+		height: 38px;
+		width: 38px;
+		transform: translate(-40%, -60%);
+		transform-origin: -50px -35px;
+		animation: rotate 5s ease-in-out infinite;
+	}
+	
+	.c3 {
+		height: 35px;
+		width: 35px;
+		transform: translate(-50%, -50%);
+		transform-origin: -50px 50px;
+		animation: rotate 8s ease-in-out infinite;
+	}
+	
+	.c4 {
+		height: 38px;
+		width: 38px;
+		transform: translate(-50%, -50%);
+		transform-origin: 40px -35px;
+		animation: rotate 4s ease-in-out infinite;
+	}
+	
+	.c5 {
+		height: 39px;
+		width: 39px;
+		// background: blue;
+		transform: translate(-40%, -40%);
+		transform-origin: 50px 50px;
+		animation: rotate 10s ease-in-out infinite;
+	}
+	
+}
+
+@keyframes rotate {
+	0% {
+	transform:rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  margin-top: -192px;
+  margin-left: -175px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fbe9c3;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #ffadb4;
+  border-radius: 180px;
+  height: 180px;
+  width: 180px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.face .ear {
+  position: absolute;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+  background-color: #ffadb4;
+  border-radius: 0 10px 0 0;
+}
+.face .ear:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+  background-color: #ffd1d8;
+  border-radius: 0 10px 0 0;
+}
+.face .earLeft {
+  left: 10px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.face .earRight {
+  right: 10px;
+}
+.face .nose {
+  background: #ffd1d8;
+  height: 52px;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.face .nose:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  background: #d06c88;
+}
+.face .nose:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  background: #d06c88;
+}
+.face .eye {
+  position: absolute;
+  top: -30px;
+  height: 20px;
+  width: 20px;
+  background: #FFF;
+  border-radius: 20px;
+  -webkit-animation: eyes 15s ease-in-out infinite;
+          animation: eyes 15s ease-in-out infinite;
+}
+.face .eye::after {
+  content: "";
+  position: absolute;
+  left: 7.5px;
+  top: 7.5px;
+  background: black;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+.face .eyeLeft {
+  left: -10px;
+}
+.face .eyeRight {
+  right: -10px;
+}
+
+@-webkit-keyframes eyes {
+  0%, 23%, 25%, 65%, 67%, 89%, 91%, 100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  24%, 66%, 90% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@keyframes eyes {
+  0%, 23%, 25%, 65%, 67%, 89%, 91%, 100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  24%, 66%, 90% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}

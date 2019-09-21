@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(#f12711, #f5af19);
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 50px;
+}
+.center .counter {
+  font-size: 1.5em;
+}
+.center .button {
+  background: transparent;
+  border: none;
+  position: relative;
+}
+.center .button:active {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.center .button-increment {
+  color: red;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 3em;
+  margin-right: 5px;
+  transition: .5s ease;
+}
+.center .button-increment:hover {
+  cursor: pointer;
+  background: red;
+  color: #FFF;
+  transition: .5s ease;
+}
+.center .button-increment .sign {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.center .button-decrement {
+  position: relative;
+  color: green;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 3em;
+  margin-left: 5px;
+  transition: .5s ease;
+  color: green;
+}
+.center .button-decrement:hover {
+  cursor: pointer;
+  background: green;
+  color: #FFF;
+  transition: .5s ease;
+}
+.center .button-decrement .sign {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}

@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #FFF;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.frame .infoTop {
+  position: absolute;
+  top: -75%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: red;
+  z-index: 99;
+  transition: all 0.5s ease-in-out;
+}
+.frame .infoTop.active {
+  top: 0%;
+  transition: all 0.5s ease-in-out;
+}
+.frame .infoTop .profile {
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  border: 5px solid #FFF;
+  box-shadow: 0 3px 5px 0 grey;
+  background-image: url(https://loremflickr.com/320/240/dog);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99;
+}
+.frame .infoTop .close {
+  position: absolute;
+  right: 25px;
+  top: 50px;
+  height: 30px;
+  width: 30px;
+  background: red;
+  border-radius: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border: 1px solid #FFF;
+  transition: all 0.2s ease-in-out;
+}
+.frame .infoTop .close:hover {
+  cursor: pointer;
+}
+.frame .infoTop .close:hover:before {
+  -webkit-transform: translate(-50%, -50%) rotate(230deg);
+          transform: translate(-50%, -50%) rotate(230deg);
+  transition: all 0.2s ease-in-out;
+}
+.frame .infoTop .close:hover:after {
+  -webkit-transform: translate(-50%, -50%) rotate(230deg);
+          transform: translate(-50%, -50%) rotate(230deg);
+  transition: all 0.2s ease-in-out;
+}
+.frame .infoTop .close:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3px;
+  width: 15px;
+  background: #FFF;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+.frame .infoTop .close:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 15px;
+  width: 3px;
+  background: #FFF;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+.frame .infoBottom {
+  position: absolute;
+  background: #FFF;
+  height: 50%;
+  width: 100%;
+  z-index: 99;
+  bottom: -50%;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+.frame .infoBottom.active {
+  bottom: 0%;
+  transition: all 0.5s ease-in-out;
+}
+.frame .infoBottom .infoBottom__title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.frame .picture {
+  height: 194px;
+  width: 194px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://loremflickr.com/320/240/dog);
+  position: relative;
+}
+.frame .picture:hover > .overlay {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.frame .picture:hover > .overlay .plus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  transition: all 0.5s ease;
+}
+.frame .picture:hover > .overlay .plus:before {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+.frame .picture:hover > .overlay .plus:after {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+.frame .picture .overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease-in-out;
+}
+.frame .picture .plus {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  height: 30px;
+  width: 30px;
+  background: red;
+  border-radius: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-transform: scale(4);
+          transform: scale(4);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease-in-out;
+}
+.frame .picture .plus:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3px;
+  width: 12px;
+  background: #FFF;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.5s ease-in-out;
+}
+.frame .picture .plus:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 12px;
+  width: 3px;
+  background: #FFF;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.5s ease-in-out;
+}
+.frame .p1 {
+  float: left;
+  background-image: url(https://loremflickr.com/320/240/dog);
+  margin: 4px 2px 2px 4px;
+}
+.frame .p2 {
+  float: right;
+  background-image: url(https://loremflickr.com/320/240/dog);
+  margin: 4px 4px 2px 2px;
+}
+.frame .p3 {
+  float: left;
+  background-image: url(https://loremflickr.com/320/240/dog);
+  margin: 2px 2px 4px 4px;
+}
+.frame .p4 {
+  float: right;
+  background-image: url(https://loremflickr.com/320/240/dog);
+  margin: 2px 4px 4px 2px;
+}

@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #130f40;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #FFF;
+  height: 250px;
+  width: 300px;
+}
+.center input {
+  display: none;
+}
+.center .head {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.center .labels {
+  background: #2ecc71;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.center .labels label {
+  color: #FFF;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center .labels label:hover {
+  cursor: pointer;
+  background: #25a25a;
+}
+.center #dashboard:checked ~ .dashboard {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  transition: .5s ease-in-out;
+}
+.center #dashboard:checked ~ .labels .labelDashboard {
+  background: #25a25a;
+}
+.center #settings:checked ~ .settings {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  transition: .5s ease-in-out;
+}
+.center #settings:checked ~ .labels .labelSetting {
+  background: #25a25a;
+}
+.center #notification:checked ~ .notification {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  transition: .5s ease-in-out;
+}
+.center #notification:checked ~ .labels .labelNotification {
+  background: #25a25a;
+}
+.center .content {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  padding: 15px;
+  opacity: 0;
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+}
+.center .content .text {
+  height: 80px;
+  width: 100%;
+}
+.center .content .text div {
+  display: inline-block;
+  height: 5px;
+  width: 150px;
+  background: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,37 @@
+class Counter extends React.Component {
+	constructor(props) {
+		super(props);
+		
+		this.state = ({
+			counter: 0
+		})
+		
+		this.increment = this.increment.bind(this);
+	}
+	increment = () => {
+		 this.setState(prevState => {
+       return {counter: prevState.counter + 1}
+    })
+	}
+	decrement = () => {
+		 this.setState(prevState => {
+       return {counter: prevState.counter - 1}
+    })
+	}
+  render() {
+    return (
+			<div className="center">
+				<button onClick={this.decrement.bind(this)} className="button button-decrement">
+				<div class="sign">-</div></button>
+				<div class="counter">{this.state.counter}</div>
+				<button onClick={this.increment.bind(this)} className="button button-increment"><div class="sign">+</div></button>
+			</div>
+		)
+  }
+}
+
+
+ReactDOM.render(
+	<Counter  />,
+	document.getElementById('root')
+);

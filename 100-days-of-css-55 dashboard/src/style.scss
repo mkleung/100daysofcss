@@ -1,0 +1,150 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #34495e;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	
+	height: 200px;
+	width: 200px;
+	background: #FFF;
+	border-radius: 50%;
+	
+	&:hover >  .circle {
+		cursor:pointer;
+		
+		.num1 {
+			transform: translate(-150%,-50%) scale(0);
+			opacity: 0;
+			transition: 1s ease;
+		}
+		
+		.num2 {
+				transform: translate(-50%,-50%);
+				opacity: 1;
+				transition: 1s ease;
+		}
+		
+		.dash {
+			// transform:translate(-50%, -50%) rotate(0deg);
+			transform:translate(-50%, -100%) rotate(0deg);
+			transition: 1s ease;
+		}
+	}
+	
+	.gradient {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		height: 160px;
+		width: 160px;
+		border-radius: 50%;
+		background: #b92b27;
+		background: -webkit-linear-gradient(to right, #1565C0, #b92b27); 
+		background: linear-gradient(to right, #1565C0, #b92b27);
+	}
+	
+	.circle {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		background: #FFF;
+		overflow:hidden;
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+		.num {
+			font-size: 3em;
+			color: #b92b27;
+			font-size: bold;
+			&:before {
+				content: "o";
+				position: absolute;
+				right: -10px;
+				top: 0;
+				font-size: .4em;
+				color: #b92b27;
+			}
+		}
+		
+		.num1 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				opacity: 1;
+			transition: 1s ease;
+		}
+		.num2 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(50%,-50%) scale(0);
+				opacity: 0;
+				transition: 1s ease;
+		}
+		.room {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,200%);
+			font-size: .7em;
+		}
+	}
+	
+	.triangle {
+			position:absolute;
+			bottom: 20px;
+			left: 50px;
+			width: 0; 
+			height: 0; 
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-bottom: 50px solid #FFF;
+		}
+	.dash {
+		position:absolute;;
+		left: 50%;
+		top: 50%;
+		transform:translate(-50%, -100%) rotate(-60deg);
+		width: 5px; 
+		height: 50px;
+		background:transparent;
+		transform-origin: bottom left;
+		transition: 1s ease;
+		&:before{
+			content: "";
+			background:#b92b27;
+			position: absolute;
+			left:0;
+			top:-35px;
+			height:50px;
+			width: 2px;
+		}
+	}
+}

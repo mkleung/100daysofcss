@@ -1,0 +1,133 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+	
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(#55efc4, #74b9ff);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	height: 400px;
+	width: 100px;
+	input {
+		display: none;
+	}
+	label {
+		position: absolute;
+		left:50%;
+		top: 70%;
+		transform: translate(-50%, -50%);
+		display: block;
+		background: #FFF;
+		height: 150px;
+		width: 250px;
+		color: black;
+		border-radius: 5px;
+		text-align: center;
+		padding: 10px 20px;
+		box-shadow: 0 0 15px 0px rgba(0 ,0 ,0 , 0.2);
+  	visibility: hidden;
+  	opacity: 0;
+  	transition: visibility 0s, opacity 2s ease, top 2s ease;
+		.title {
+			font-weight: bold;
+		}
+		.ok {
+			color: #FFF;
+			background: #ff7675;
+			position: absolute;
+			height: 40px;
+			width: 100%;
+			top: 125px;
+			left: 0;
+			font-weight: 500;
+			border:none;
+			padding-top: 10px;
+			border-radius: 0 0 5px 5px;
+			&:hover {
+				background: darken(#ff7675, 10%);
+			}
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	
+	.secondLabel:after {
+		content: "1";
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 25px;
+		widtH: 25px;
+		color: #FFF;
+		padding-top: 5px;
+		background: grey;
+		border-radius: 0 5px 0 0;
+	}
+	.thirdLabel:after {
+		content: "2";
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 25px;
+		widtH: 25px;
+		color: #FFF;
+		padding-top: 5px;
+		background: grey;
+		border-radius: 0 5px 0 0;
+	}
+	.firstLabel:after {
+		content: "3";
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 25px;
+		widtH: 25px;
+		color: #FFF;
+		padding-top: 5px;
+		background: grey;
+		border-radius: 0 5px 0 0;
+	}
+	
+	#first:checked ~ .secondLabel{
+		visibility: visible;
+		opacity: 1;
+		top: 50%;
+		transition: visibility 0s, opacity 2s ease, top 2s ease;
+	}
+
+	#second:checked ~ .thirdLabel{
+			visibility: visible;
+			opacity: 1;
+				top: 50%;
+		  transition: visibility 0s, opacity 2s ease, top 2s ease;
+	}
+	
+	#third:checked ~ .firstLabel{
+			visibility: visible;
+			opacity: 1;
+			top: 50%;
+			transition: visibility 0s, opacity 2s ease, top 2s ease;
+	}
+}

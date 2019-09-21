@@ -1,0 +1,2036 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #2ecc71;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+input {
+  display: none;
+}
+
+.square {
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #40d47e;
+}
+.square:hover {
+  cursor: pointer;
+  background: #29b765;
+}
+
+#square-1:checked ~ .square-1 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-2:checked ~ .square-2 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-3:checked ~ .square-3 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-4:checked ~ .square-4 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-5:checked ~ .square-5 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-6:checked ~ .square-6 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-7:checked ~ .square-7 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-8:checked ~ .square-8 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-9:checked ~ .square-9 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-10:checked ~ .square-10 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-11:checked ~ .square-11 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-12:checked ~ .square-12 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-13:checked ~ .square-13 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-14:checked ~ .square-14 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-15:checked ~ .square-15 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-16:checked ~ .square-16 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-17:checked ~ .square-17 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-18:checked ~ .square-18 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-19:checked ~ .square-19 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-20:checked ~ .square-20 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-21:checked ~ .square-21 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-22:checked ~ .square-22 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-23:checked ~ .square-23 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-24:checked ~ .square-24 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-25:checked ~ .square-25 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-26:checked ~ .square-26 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-27:checked ~ .square-27 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-28:checked ~ .square-28 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-29:checked ~ .square-29 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-30:checked ~ .square-30 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-31:checked ~ .square-31 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-32:checked ~ .square-32 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-33:checked ~ .square-33 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-34:checked ~ .square-34 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-35:checked ~ .square-35 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-36:checked ~ .square-36 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-37:checked ~ .square-37 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-38:checked ~ .square-38 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-39:checked ~ .square-39 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-40:checked ~ .square-40 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-41:checked ~ .square-41 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-42:checked ~ .square-42 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-43:checked ~ .square-43 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-44:checked ~ .square-44 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-45:checked ~ .square-45 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-46:checked ~ .square-46 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-47:checked ~ .square-47 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-48:checked ~ .square-48 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-49:checked ~ .square-49 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-50:checked ~ .square-50 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-51:checked ~ .square-51 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-52:checked ~ .square-52 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-53:checked ~ .square-53 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-54:checked ~ .square-54 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-55:checked ~ .square-55 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-56:checked ~ .square-56 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-57:checked ~ .square-57 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-58:checked ~ .square-58 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-59:checked ~ .square-59 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-60:checked ~ .square-60 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-61:checked ~ .square-61 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-62:checked ~ .square-62 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-63:checked ~ .square-63 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-64:checked ~ .square-64 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-65:checked ~ .square-65 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-66:checked ~ .square-66 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-67:checked ~ .square-67 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-68:checked ~ .square-68 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-69:checked ~ .square-69 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-70:checked ~ .square-70 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-71:checked ~ .square-71 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-72:checked ~ .square-72 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-73:checked ~ .square-73 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-74:checked ~ .square-74 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-75:checked ~ .square-75 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-76:checked ~ .square-76 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-77:checked ~ .square-77 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-78:checked ~ .square-78 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-79:checked ~ .square-79 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-80:checked ~ .square-80 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-81:checked ~ .square-81 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-82:checked ~ .square-82 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-83:checked ~ .square-83 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-84:checked ~ .square-84 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-85:checked ~ .square-85 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-86:checked ~ .square-86 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-87:checked ~ .square-87 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-88:checked ~ .square-88 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-89:checked ~ .square-89 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-90:checked ~ .square-90 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-91:checked ~ .square-91 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-92:checked ~ .square-92 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-93:checked ~ .square-93 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-94:checked ~ .square-94 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-95:checked ~ .square-95 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-96:checked ~ .square-96 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-97:checked ~ .square-97 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-98:checked ~ .square-98 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-99:checked ~ .square-99 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-100:checked ~ .square-100 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-101:checked ~ .square-101 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-102:checked ~ .square-102 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-103:checked ~ .square-103 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-104:checked ~ .square-104 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-105:checked ~ .square-105 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-106:checked ~ .square-106 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-107:checked ~ .square-107 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-108:checked ~ .square-108 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-109:checked ~ .square-109 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-110:checked ~ .square-110 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-111:checked ~ .square-111 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-112:checked ~ .square-112 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-113:checked ~ .square-113 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-114:checked ~ .square-114 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-115:checked ~ .square-115 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-116:checked ~ .square-116 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-117:checked ~ .square-117 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-118:checked ~ .square-118 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-119:checked ~ .square-119 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-120:checked ~ .square-120 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-121:checked ~ .square-121 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-122:checked ~ .square-122 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-123:checked ~ .square-123 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-124:checked ~ .square-124 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-125:checked ~ .square-125 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-126:checked ~ .square-126 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-127:checked ~ .square-127 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-128:checked ~ .square-128 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-129:checked ~ .square-129 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-130:checked ~ .square-130 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-131:checked ~ .square-131 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-132:checked ~ .square-132 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-133:checked ~ .square-133 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-134:checked ~ .square-134 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-135:checked ~ .square-135 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-136:checked ~ .square-136 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-137:checked ~ .square-137 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-138:checked ~ .square-138 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-139:checked ~ .square-139 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-140:checked ~ .square-140 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-141:checked ~ .square-141 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-142:checked ~ .square-142 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-143:checked ~ .square-143 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-144:checked ~ .square-144 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-145:checked ~ .square-145 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-146:checked ~ .square-146 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-147:checked ~ .square-147 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-148:checked ~ .square-148 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-149:checked ~ .square-149 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-150:checked ~ .square-150 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-151:checked ~ .square-151 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-152:checked ~ .square-152 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-153:checked ~ .square-153 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-154:checked ~ .square-154 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-155:checked ~ .square-155 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-156:checked ~ .square-156 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-157:checked ~ .square-157 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-158:checked ~ .square-158 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-159:checked ~ .square-159 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-160:checked ~ .square-160 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-161:checked ~ .square-161 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-162:checked ~ .square-162 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-163:checked ~ .square-163 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-164:checked ~ .square-164 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-165:checked ~ .square-165 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-166:checked ~ .square-166 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-167:checked ~ .square-167 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-168:checked ~ .square-168 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-169:checked ~ .square-169 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-170:checked ~ .square-170 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-171:checked ~ .square-171 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-172:checked ~ .square-172 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-173:checked ~ .square-173 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-174:checked ~ .square-174 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-175:checked ~ .square-175 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-176:checked ~ .square-176 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-177:checked ~ .square-177 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-178:checked ~ .square-178 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-179:checked ~ .square-179 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-180:checked ~ .square-180 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-181:checked ~ .square-181 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-182:checked ~ .square-182 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-183:checked ~ .square-183 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-184:checked ~ .square-184 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-185:checked ~ .square-185 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-186:checked ~ .square-186 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-187:checked ~ .square-187 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-188:checked ~ .square-188 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-189:checked ~ .square-189 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-190:checked ~ .square-190 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-191:checked ~ .square-191 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-192:checked ~ .square-192 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-193:checked ~ .square-193 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-194:checked ~ .square-194 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-195:checked ~ .square-195 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-196:checked ~ .square-196 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-197:checked ~ .square-197 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-198:checked ~ .square-198 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-199:checked ~ .square-199 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-200:checked ~ .square-200 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-201:checked ~ .square-201 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-202:checked ~ .square-202 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-203:checked ~ .square-203 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-204:checked ~ .square-204 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-205:checked ~ .square-205 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-206:checked ~ .square-206 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-207:checked ~ .square-207 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-208:checked ~ .square-208 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-209:checked ~ .square-209 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-210:checked ~ .square-210 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-211:checked ~ .square-211 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-212:checked ~ .square-212 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-213:checked ~ .square-213 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-214:checked ~ .square-214 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-215:checked ~ .square-215 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-216:checked ~ .square-216 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-217:checked ~ .square-217 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-218:checked ~ .square-218 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-219:checked ~ .square-219 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-220:checked ~ .square-220 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-221:checked ~ .square-221 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-222:checked ~ .square-222 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-223:checked ~ .square-223 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-224:checked ~ .square-224 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-225:checked ~ .square-225 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-226:checked ~ .square-226 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-227:checked ~ .square-227 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-228:checked ~ .square-228 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-229:checked ~ .square-229 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-230:checked ~ .square-230 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-231:checked ~ .square-231 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-232:checked ~ .square-232 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-233:checked ~ .square-233 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-234:checked ~ .square-234 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-235:checked ~ .square-235 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-236:checked ~ .square-236 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-237:checked ~ .square-237 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-238:checked ~ .square-238 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-239:checked ~ .square-239 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-240:checked ~ .square-240 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-241:checked ~ .square-241 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-242:checked ~ .square-242 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-243:checked ~ .square-243 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-244:checked ~ .square-244 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-245:checked ~ .square-245 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-246:checked ~ .square-246 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-247:checked ~ .square-247 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-248:checked ~ .square-248 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-249:checked ~ .square-249 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-250:checked ~ .square-250 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-251:checked ~ .square-251 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-252:checked ~ .square-252 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-253:checked ~ .square-253 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-254:checked ~ .square-254 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-255:checked ~ .square-255 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-256:checked ~ .square-256 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-257:checked ~ .square-257 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-258:checked ~ .square-258 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-259:checked ~ .square-259 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-260:checked ~ .square-260 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-261:checked ~ .square-261 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-262:checked ~ .square-262 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-263:checked ~ .square-263 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-264:checked ~ .square-264 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-265:checked ~ .square-265 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-266:checked ~ .square-266 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-267:checked ~ .square-267 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-268:checked ~ .square-268 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-269:checked ~ .square-269 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-270:checked ~ .square-270 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-271:checked ~ .square-271 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-272:checked ~ .square-272 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-273:checked ~ .square-273 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-274:checked ~ .square-274 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-275:checked ~ .square-275 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-276:checked ~ .square-276 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-277:checked ~ .square-277 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-278:checked ~ .square-278 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-279:checked ~ .square-279 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-280:checked ~ .square-280 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-281:checked ~ .square-281 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-282:checked ~ .square-282 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-283:checked ~ .square-283 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-284:checked ~ .square-284 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-285:checked ~ .square-285 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-286:checked ~ .square-286 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-287:checked ~ .square-287 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-288:checked ~ .square-288 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-289:checked ~ .square-289 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-290:checked ~ .square-290 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-291:checked ~ .square-291 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-292:checked ~ .square-292 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-293:checked ~ .square-293 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-294:checked ~ .square-294 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-295:checked ~ .square-295 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-296:checked ~ .square-296 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-297:checked ~ .square-297 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-298:checked ~ .square-298 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-299:checked ~ .square-299 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-300:checked ~ .square-300 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-301:checked ~ .square-301 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-302:checked ~ .square-302 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-303:checked ~ .square-303 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-304:checked ~ .square-304 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-305:checked ~ .square-305 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-306:checked ~ .square-306 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-307:checked ~ .square-307 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-308:checked ~ .square-308 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-309:checked ~ .square-309 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-310:checked ~ .square-310 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-311:checked ~ .square-311 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-312:checked ~ .square-312 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-313:checked ~ .square-313 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-314:checked ~ .square-314 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-315:checked ~ .square-315 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-316:checked ~ .square-316 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-317:checked ~ .square-317 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-318:checked ~ .square-318 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-319:checked ~ .square-319 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-320:checked ~ .square-320 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-321:checked ~ .square-321 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-322:checked ~ .square-322 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-323:checked ~ .square-323 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-324:checked ~ .square-324 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-325:checked ~ .square-325 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-326:checked ~ .square-326 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-327:checked ~ .square-327 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-328:checked ~ .square-328 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-329:checked ~ .square-329 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-330:checked ~ .square-330 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-331:checked ~ .square-331 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-332:checked ~ .square-332 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-333:checked ~ .square-333 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-334:checked ~ .square-334 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-335:checked ~ .square-335 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-336:checked ~ .square-336 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-337:checked ~ .square-337 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-338:checked ~ .square-338 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-339:checked ~ .square-339 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-340:checked ~ .square-340 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-341:checked ~ .square-341 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-342:checked ~ .square-342 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-343:checked ~ .square-343 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-344:checked ~ .square-344 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-345:checked ~ .square-345 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-346:checked ~ .square-346 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-347:checked ~ .square-347 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-348:checked ~ .square-348 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-349:checked ~ .square-349 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-350:checked ~ .square-350 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-351:checked ~ .square-351 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-352:checked ~ .square-352 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-353:checked ~ .square-353 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-354:checked ~ .square-354 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-355:checked ~ .square-355 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-356:checked ~ .square-356 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-357:checked ~ .square-357 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-358:checked ~ .square-358 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-359:checked ~ .square-359 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-360:checked ~ .square-360 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-361:checked ~ .square-361 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-362:checked ~ .square-362 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-363:checked ~ .square-363 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-364:checked ~ .square-364 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-365:checked ~ .square-365 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-366:checked ~ .square-366 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-367:checked ~ .square-367 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-368:checked ~ .square-368 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-369:checked ~ .square-369 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-370:checked ~ .square-370 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-371:checked ~ .square-371 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-372:checked ~ .square-372 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-373:checked ~ .square-373 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-374:checked ~ .square-374 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-375:checked ~ .square-375 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-376:checked ~ .square-376 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-377:checked ~ .square-377 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-378:checked ~ .square-378 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-379:checked ~ .square-379 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-380:checked ~ .square-380 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-381:checked ~ .square-381 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-382:checked ~ .square-382 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-383:checked ~ .square-383 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-384:checked ~ .square-384 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-385:checked ~ .square-385 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-386:checked ~ .square-386 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-387:checked ~ .square-387 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-388:checked ~ .square-388 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-389:checked ~ .square-389 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-390:checked ~ .square-390 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-391:checked ~ .square-391 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-392:checked ~ .square-392 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-393:checked ~ .square-393 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-394:checked ~ .square-394 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-395:checked ~ .square-395 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-396:checked ~ .square-396 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-397:checked ~ .square-397 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-398:checked ~ .square-398 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-399:checked ~ .square-399 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+#square-400:checked ~ .square-400 {
+  background: #FFF;
+  border: 1px solid #FFF;
+}

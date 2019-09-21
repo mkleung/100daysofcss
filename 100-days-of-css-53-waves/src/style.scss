@@ -1,0 +1,186 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+$blue: #3498db;
+$lightblue: lighten($blue,15%);
+$darkblue: darken($blue,15%);
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #34495e;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	.row {
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		width: 700px;
+		height:100px;
+	}
+	
+	.row1 {
+		bottom: 0px;
+		transform: translate(-30%, 0);
+		z-index: 3;
+		.wave {
+			&:before {
+				background: $lightblue;
+			}
+			.left {
+				&:before {
+					background: $lightblue;
+				}
+				&:after {
+					background: $lightblue;
+				}
+			}
+			.right {
+				&:before {
+					box-shadow: 0 25px 0px 10px $lightblue;
+				}
+			}
+		}
+
+		animation: move 8s ease-in-out infinite;
+	}
+	
+	.row2 {
+		bottom: 50px;
+		transform: translate(-30%, 0);
+		z-index: 2;
+		.wave {
+			&:before {
+				background: $blue;
+			}
+			.left {
+				&:before {
+					background: $blue;
+				}
+				&:after {
+					background: $blue;
+				}
+			}
+			.right {
+				&:before {
+					box-shadow: 0 25px 0px 10px $blue;
+				}
+			}
+		}
+
+		animation: moveReverse 9s ease-in-out infinite;
+	}
+
+	
+	.row3 {
+		bottom: 100px;
+		transform: translate(-30%, 0);
+		z-index: 1;
+		.wave {
+			&:before {
+				background: $darkblue;
+			}
+			.left {
+				&:before {
+					background: $darkblue;
+				}
+				&:after {
+					background: $darkblue;
+				}
+			}
+			.right {
+				&:before {
+					box-shadow: 0 25px 0px 10px $darkblue;
+				}
+			}
+		}
+
+		animation: move 10s ease-in-out infinite;
+	}
+}
+
+
+
+.wave {
+	height: 100px;
+	width: 100px;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		height: 50px;
+		width: 105px;
+		content: "";
+	}
+	.left {
+		width: 50px;
+		height: 50px;
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 25px;
+			height: 25px;
+			width: 50px;
+		}
+	}
+	
+	.right {
+		width: 50px;
+		height: 50px;
+		&:before {
+			content: "";
+			position: absolute;
+			left: 50px;
+			top: -5px;
+			background: transparent;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			
+	}
+	}
+}
+
+@keyframes move {
+	0%, 100% {
+		transform: translate(-30%, 0);
+	}
+	50% {
+		transform: translate(0%, 0);
+	}
+}
+
+@keyframes moveReverse {
+	0%, 100% {
+		transform: translate(0%, 0);
+	}
+	50% {
+		transform: translate(-30%, 0);
+	}
+}

@@ -1,0 +1,135 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(#DCE35B, #45B649);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	.container {
+		background:#FFF;
+		width: 300px;
+		height: 300px;
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin: auto;
+		box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+		.title {
+			padding: 20px;
+			border-bottom: 1px solid #bdc3c7;
+			text-align: center;
+		}
+		
+		.form {
+			text-align:center;
+			position: absolute;
+			top: 80px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 200px;
+			height: 120px;
+			border: 1px dashed #bdc3c7;
+			input {
+				outline: none;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				z-index: 999;
+			}
+			.clouds {
+				position: absolute;
+				top: 50px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				height: 30px;
+				width: 80px;
+				background: #bdc3c7;
+				border-radius: 50px;
+			}
+			.clouds::before { 
+				content: "";
+				position: absolute;
+				top: -15px;
+				left: 15px;
+				height: 30px;
+				width: 30px;
+				border-radius: 30px;
+				background: #bdc3c7;
+			}
+			.clouds::after{ 
+				content: "";
+				position: absolute;
+				top: -10px;
+				left: 35px;
+				height: 30px;
+				width: 30px;
+				border-radius: 30px;
+				background: #bdc3c7;
+			}
+			.arrow {
+				position: absolute;
+				top: 15px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				background:#FFF;
+				height: 15px;
+				width: 10px;
+				z-index: 999;
+			}
+			.arrow::after {
+				content: "";
+				position: absolute;
+				top: -20px;
+				left: -4.5px;
+				border-top: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-left: 10px solid transparent;
+				border-bottom: 10px solid #FFF;
+				
+			}
+			.upload {
+				position: absolute;
+				top: 140px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 140px;
+				
+				background: #2ecc71;
+				color: #FFF;
+				padding: 10px 15px;
+				border-radius: 2px;
+				border:none;
+				box-shadow: 0px 2px 0px 0px #498C25;
+				cursor: pointer;
+				transition: all 1s ease-in-out;
+			}
+			.upload:hover {
+					box-shadow: 0px 2px 0px 0px #498C25, 0 2px 10px 0 #2ecc71;
+			}
+		}
+	}
+}

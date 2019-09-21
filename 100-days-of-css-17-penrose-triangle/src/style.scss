@@ -1,0 +1,64 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background-color: #FFF;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, #0075BE,20px, #0075BE 24px);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(1);
+	height: 250px;
+	width: 250px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+	background: lighten(black, 30%);
+	
+	animation: appear 1s ease;
+	
+	svg:hover {
+		cursor: pointer;
+		#p1b, #p2b, #p3b {
+			opacity: 0;
+			transition: opacity 1s ease;
+		}
+	}
+	
+	#p1b, #p2b, #p3b {
+		opacity: 1;
+		transition: opacity 1s ease;
+	}
+	
+	#p1a, #p2a, #p3a {
+		opacity: 1;
+	}
+	
+}
+
+@keyframes appear {
+	0% {
+		 transform: translate(-50%,-50%) scale(0) rotate(180deg);
+	}
+	100% {
+		 transform: translate(-50%,-50%) scale(1) rotate(360deg);
+	}
+}

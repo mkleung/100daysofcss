@@ -1,0 +1,140 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #34495e;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	
+	text-align: center;
+	color: #FFF;
+	
+	.circle {
+
+		position: relative;
+		height: 150px;
+		width: 200px;
+		.number {
+			position: absolute;
+			left: 62px;
+			top: 35px;
+			font-weight: bold;
+			font-size:1.5rem;
+			
+			div {
+				width: 0.6em;
+				height: 1em;
+				overflow: hidden;
+				line-height: 1em;
+				display: inline-block;
+			}
+			span {
+				position: relative;
+			}
+			.spin1 {
+				animation: spin1 1s linear ;
+			}
+			.spin2 {
+				animation: spin2 1s linear ;
+			}
+			
+			#digit1 {
+				top: -1em;
+			}
+			#digit2 {
+				top: -6em;
+			}
+			#digit3 {
+				top: -4em;
+			}
+			#digit4 {
+				top: -7em;
+			}
+		}
+		.text {
+			position: absolute;
+			left: 85px;
+			top: 65px;
+		}
+		svg {
+		width: 114px;
+		height: 114px;
+
+			.back {
+				fill: none;
+				stroke-width: 10px;
+				stroke: #1B2A33;
+			}
+
+			.front {
+				fill: none;
+				stroke-width: 10px;
+				// stroke: #2ecc71;
+				stroke-linecap: round;
+				stroke-dasharray:350;
+				stroke-dashoffset:100;
+				transform: rotate(-90deg);
+				transform-origin: 50% 50%;
+				animation: dash 1s linear;
+			}
+		}	
+	}
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 350;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes spin1 {
+  0% {
+    top: 0em;
+		opacity: 0;
+  }
+  50% {
+    top: -5em;
+  }
+  100% {
+    top: -9em;
+		opacity: 1;
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    top: -9em;
+		opacity: 0;
+  }
+  50% {
+    top: -5em;
+  }
+  100% {
+    top: 0em;
+		opacity:1;
+  }
+}

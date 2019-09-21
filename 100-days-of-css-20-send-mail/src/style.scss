@@ -1,0 +1,130 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #34495e;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	height:100%;
+	width: 100%;
+	
+	.mail {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 300px;
+		height: 300px;
+		transform: translate(-50%, -50%);
+		stroke-dasharray: 700;
+		stroke-dashoffset: 0;
+	}
+	
+	.plane {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 300px;
+		height: 300px;
+		transform: translate(-50%, -50%);
+		stroke-dasharray: 700;
+		stroke-dashoffset: 700;
+	}
+	
+	.button {
+		height: 50px;
+		width: 200px;
+		background: #2ecc71;
+		border-radius: 50px;
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #FFF;
+		font-weight: semi-bold;
+		font-size: 1.25rem;
+		display: flex;
+		align-items: center;
+  	justify-content: center;
+		z-index: 99;
+		font-weight: bold;
+		transition: .5s ease;
+		&:hover {
+			cursor: pointer;
+			background: #FFF;
+			color: #2ecc71;
+			transition: .5s ease;
+		}
+	
+		&:after {
+			content: "";
+			position: absolute;
+			height: 50px;
+			width: 200px;
+			border-radius: 50px;
+			box-shadow: 0 0 0px 0 white;
+			transition: all 0.2s;
+		}
+
+		&:hover:active:after {
+			box-shadow: 0 0 20px 0 white;
+			transition: all 0.2s;
+		}
+	}
+	
+	#send {
+		display: none;
+	}
+	
+	#send:checked ~ .mail {
+		stroke-dashoffset: 700;
+	transition: stroke-dashoffset 1s ease-in-out ;
+	}
+	
+	#send:checked ~ .plane {
+		stroke-dashoffset: 300;
+		transition: stroke-dashoffset 1s ease-in-out 0.8s;
+		 animation: fly 2.5s ease-in-out;
+		opacity: 0;
+	}
+}
+
+@keyframes fly {
+	0% {
+		transform: translate(-50%, -50%)  scale(1);
+		opacity: 1;
+	}
+	40% {
+			transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+	60% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(20%, -80%) scale(0);
+		opacity: 0;
+	}
+
+}

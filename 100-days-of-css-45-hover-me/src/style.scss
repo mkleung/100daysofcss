@@ -1,0 +1,115 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #1abc9c;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	text-transform: uppercase;
+	height: 300px;
+	width: 300px;
+	.button {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		text-align:center;
+		font-size: 2em;
+		font-weight: bold;
+		color: #FFF;
+		border: 5px solid #FFF;
+		width: 125px;
+		height: 40px;
+		transform: translate(-50%, -50%);
+		transition: .5s ease;
+		
+		&:hover {
+			cursor:pointer;
+			background: darken(#1abc9c, 10%);
+			transition: .5s ease;
+			&:before {
+				animation: in 1s ease;
+			}
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			background: darken(#1abc9c, 10%);
+			height: 5px;
+			width: 5px;
+			top: -5px;
+			left: -5px;
+			opacity: 0;
+			animation: out 1s ease;
+		}
+	}
+
+
+}
+
+@keyframes in {
+	0% {
+		opacity: 1;
+		transform: translate(0px, 0);
+	}
+	25% {
+		opacity: 1;
+			transform: translate(130px, 0);
+	}
+	50% {
+		opacity: 1;
+			transform: translate(130px, 45px);
+	}
+	75% {
+		opacity: 1;
+			transform: translate(0px, 45px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0);
+	}
+}
+
+
+@keyframes out {
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0);
+	}
+	75% {
+		opacity: 1;
+			transform: translate(130px, 0);
+	}
+	50% {
+		opacity: 1;
+			transform: translate(130px, 45px);
+	}
+	25% {
+		opacity: 1;
+			transform: translate(0px, 45px);
+	}
+	0% {
+		opacity: 1;
+		transform: translate(0px, 0);
+	}
+}

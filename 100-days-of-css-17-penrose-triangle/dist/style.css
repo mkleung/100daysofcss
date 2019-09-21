@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #FFF;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, #0075BE, 20px, #0075BE 24px);
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  background: #4d4d4d;
+  -webkit-animation: appear 1s ease;
+          animation: appear 1s ease;
+}
+.center svg:hover {
+  cursor: pointer;
+}
+.center svg:hover #p1b, .center svg:hover #p2b, .center svg:hover #p3b {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.center #p1b, .center #p2b, .center #p3b {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.center #p1a, .center #p2a, .center #p3a {
+  opacity: 1;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0) rotate(180deg);
+            transform: translate(-50%, -50%) scale(0) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(360deg);
+            transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0) rotate(180deg);
+            transform: translate(-50%, -50%) scale(0) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(360deg);
+            transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  }
+}

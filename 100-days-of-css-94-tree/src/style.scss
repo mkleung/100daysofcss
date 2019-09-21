@@ -1,0 +1,174 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+$brown: #f0c52b;
+$left: #f0932b;
+$right: #f0632b;
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  margin-top: -192px;
+  margin-left: -175px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #c7ecee;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ground {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	height: 5px;
+	widtH: 100px;
+	background: darken(#c7ecee, 10%);
+	
+	.trunk {
+		background: $brown;
+		height: 200px;
+		width: 5px;
+		position: absolute;
+		left: 50%;
+		bottom: 5px;
+		animation: trunk 1s ease-in-out;
+		z-index: 99;
+		.branch {
+			background-color: $brown;
+			width: 5px;
+			position: absolute;
+			left: 0;
+			transform-origin: bottom;
+			z-index: 2;
+		}
+		.b1 {
+			height: 40px;
+			top: 40px;
+			transform: rotate(45deg);
+			animation: branch1 1s ease-in-out;
+		}
+		.b2 {
+			height: 80px;
+			top: 80px;
+			transform: rotate(45deg);
+			animation: branch2 1s ease-in-out;
+		}
+		.b3 {
+			height: 20px;
+			top: 20px;
+			transform: rotate(-45deg);
+			animation: branch3 1s ease-in-out;
+		}
+		.b4 {
+			height: 60px;
+			top: 60px;
+			transform: rotate(-45deg);
+			animation: branch4 1s ease-in-out;
+		}
+	}
+	
+	.triangleLeft {
+			position: absolute;
+			left: -46px;
+			top:  -250px;
+			z-index: -10;
+			width: 0;
+      height: 0;
+
+			border-bottom: 220px solid $left;
+      border-left: 100px solid transparent;
+			animation: leafLeft 2s ease-in-out; 
+			transform-origin: right;
+		}
+		.triangleRight {
+			position: absolute;
+			right: -54px;
+			top: -250px;
+			z-index: 0;
+			width: 0;
+			height: 0;
+			border-bottom: 220px solid $right;
+			border-right: 100px solid transparent;
+			animation: leafRight 2s ease-in-out;
+			transform-origin: left;
+		}
+}
+
+@keyframes trunk {
+	0% {
+		height: 0px;
+	}
+	80% {
+		height: 200px;
+	}
+	90% {
+		height: 190px;
+	}
+	100% {
+		height: 200px;
+	}
+}
+
+@keyframes branch1 {
+	0%, 50% {
+		height: 0;
+	}
+	100% {
+		height: 40px;
+	}
+}
+
+@keyframes branch2 {
+	0%, 50% {
+		height: 0;
+	}
+	100% {
+		height: 80px;
+	}
+}
+
+@keyframes branch3 {
+	0%, 50% {
+		height: 0;
+	}
+	100% {
+		height: 20px;
+	}
+}
+
+@keyframes branch4 {
+	0%, 50% {
+		height: 0;
+	}
+	100% {
+		height: 60px;
+	}
+}
+
+
+@keyframes leafLeft {
+	0%, 50% {
+     transform: scaleX(0);
+	}
+	100% {	     
+     transform: scaleX(1);	
+	}
+}
+
+@keyframes leafRight {
+	0%, 50% {	     
+     transform: scaleX(0);
+	}
+	100% {    
+     transform: scaleX(1);
+	}
+}

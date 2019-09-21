@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #2ecc71;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.center1 {
+  height: 100px;
+  width: 100px;
+  background: #FFF;
+  border-radius: 50%;
+  position: relative;
+  transition: .5s ease;
+}
+.center1 .bite {
+  position: absolute;
+  right: -25px;
+  top: 15px;
+  height: 50px;
+  width: 50px;
+  background: #2ecc71;
+  z-index: 2;
+  border-radius: 50%;
+}
+.center1 .leaf {
+  position: absolute;
+  right: 10px;
+  top: -50px;
+  height: 40px;
+  width: 40px;
+  background: #FFF;
+  z-index: 2;
+  border-radius: 40px 0;
+}
+.center1 .fifth {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  background: #2ecc71;
+  z-index: 2;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  transition: .5s ease;
+}
+.center1:hover {
+  cursor: pointer;
+}
+
+.check:checked ~ .center1 {
+  -webkit-transform: rotate(360deg) scale(20);
+          transform: rotate(360deg) scale(20);
+  transition: .5s ease;
+}
+.check:checked ~ .center1 .fifth {
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+          transform: translate(-50%, -50%) scale(0.1);
+  transition: .5s ease;
+}

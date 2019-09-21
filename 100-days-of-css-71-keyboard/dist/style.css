@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #2d3436;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.display {
+  position: fixed;
+  left: 50%;
+  top: 33%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  font-size: 75px;
+  text-align: center;
+  display: none;
+}
+
+.keyboard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #FFF;
+  height: 200px;
+  width: 100%;
+  background: #636e72;
+}
+.keyboard .row1 {
+  padding-top: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.keyboard .row2 {
+  height: 40px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 77%;
+}
+.keyboard .row3 {
+  height: 40px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 62%;
+}
+.keyboard .key {
+  height: 34px;
+  width: 34px;
+  border-radius: 34px;
+  position: relative;
+  float: left;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.keyboard .key input {
+  visibility: hidden;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background: #636e72;
+}
+.keyboard .key input:checked ~ #q, .keyboard .key input:checked ~ #w, .keyboard .key input:checked ~ #e, .keyboard .key input:checked ~ #r, .keyboard .key input:checked ~ #t, .keyboard .key input:checked ~ #y, .keyboard .key input:checked ~ #u, .keyboard .key input:checked ~ #i, .keyboard .key input:checked ~ #o, .keyboard .key input:checked ~ #p {
+  display: block;
+}
+.keyboard .key input:checked ~ #a, .keyboard .key input:checked ~ #s, .keyboard .key input:checked ~ #d, .keyboard .key input:checked ~ #f, .keyboard .key input:checked ~ #g, .keyboard .key input:checked ~ #h, .keyboard .key input:checked ~ #j, .keyboard .key input:checked ~ #k, .keyboard .key input:checked ~ #l {
+  display: block;
+}
+.keyboard .key input:checked ~ #z, .keyboard .key input:checked ~ #x, .keyboard .key input:checked ~ #c, .keyboard .key input:checked ~ #v, .keyboard .key input:checked ~ #b, .keyboard .key input:checked ~ #b, .keyboard .key input:checked ~ #n, .keyboard .key input:checked ~ #m {
+  display: block;
+}
+.keyboard .key label {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 34px;
+  line-height: 30px;
+}
+.keyboard .key label:hover {
+  cursor: pointer;
+}
+.keyboard .key:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

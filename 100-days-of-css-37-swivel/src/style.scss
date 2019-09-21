@@ -1,0 +1,160 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+$green: #2ecc71;
+$blue: #3498db;
+$orange: #f39c12;
+	
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(#FDC830, #F37335);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	height: 150px;
+	width: 150px;
+	background: #FFF;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+	
+	.head {
+		height: 30%;
+		width: 100%;
+		border-radius: 8px 8px 0 0;
+	}
+	
+	.lines {
+		height: 70%;
+		width: 100%;
+		background: #FFF;
+		border-radius: 0 0 8px 8px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		.line {
+			height: 5px;
+			width: 80px;
+			background: #bdc3c7;
+		}
+	}
+}
+
+.c3 {
+	.head {
+		background: $orange;
+	}
+	transform: translate(25%,-50%) scale(.5);
+	animation: card3 3s ease infinite;
+}
+
+.c2 {
+	.head {
+		background: $blue;
+	}
+	transform: translate(-50%,-50%) ;
+	animation: card2 3s ease infinite;
+}
+
+.c1 {
+	.head {
+		background: $green;
+	}
+	transform: translate(-125%,-50%) scale(.5);
+	animation: card1 3s ease infinite;
+}
+
+@keyframes card1 {
+	0% {
+		transform: translate(-125%,-50%) scale(.5);
+		z-index: 1;
+	}
+	10% {
+		z-index: 2;
+	}
+	33% {
+		transform: translate(-50%,-50%) scale(1);
+		z-index: 2;
+	}
+	35% {
+		z-index: 2;
+	}
+	66% {
+		transform: translate(25%,-50%) scale(.5);
+		z-index: 1;
+	}
+	100% {
+		transform: translate(-125%,-50%) scale(.5);
+		z-index: 1;
+	}
+}
+
+
+@keyframes card2 {
+	0% {
+		transform: translate(-50%,-50%) scale(1);
+		z-index: 2;
+	}
+	5% {
+		z-index: 2;
+	}
+	33% {
+		transform: translate(25%,-50%) scale(.5);
+		z-index: 1;
+	}
+	66% {
+		transform: translate(-125%,-50%) scale(.5);
+		z-index: 1;
+	}
+	95% {
+		z-index: 2;
+	}
+	100% {
+		transform: translate(-50%,-50%) scale(1);
+		z-index: 2;
+	}
+}
+
+
+@keyframes card3 {
+	0% {
+		transform: translate(25%,-50%) scale(.5);
+		z-index: 1;
+	}
+	33% {
+		transform: translate(-125%,-50%) scale(.5);
+		z-index: 1;
+	}
+	62% {
+		z-index: 2;
+	}
+	66% {
+		transform: translate(-50%,-50%) scale(1);
+		z-index: 2;
+	}
+	68% {
+		z-index: 2;
+	}
+	100% {
+		transform: translate(25%,-50%) scale(.5);
+		z-index: 1;
+	}
+}
