@@ -1,0 +1,153 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+//$sand: #b86951;
+$sand: #864;
+$igloo: lighten($sand, 5%);
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(#B85187, #636380);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+	
+	
+.moon {
+	position: absolute;
+	left: 80px;
+	top: 50px;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	background: #F6ECC0;
+	box-shadow: 0 0 25px 5px #F6ECC0;
+	animation: rise 1s ease-out;
+}
+
+.moon2 {
+	position: absolute;
+	left: 200px;
+	top: 150px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: #FC1C3A;
+	box-shadow: 0 0 25px 0 #FC1C3A;
+	animation: rise 1s ease-out;
+}
+
+
+.horizon {
+		position: absolute;
+		width: 400px;
+		height: 90px;
+		left: 0px;
+		bottom: 50px;
+		background: $sand;
+		box-shadow: 0 0 5px 0px $sand;
+	z-index: 20;
+}
+
+.igloo {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		left: 0px;
+		bottom: 100px;
+		background: $igloo;
+		border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	z-index: 10;
+}
+
+.igloo::after {
+	content: "";
+	position: absolute;
+	top: 35px;
+	right: -30px;
+	height: 50px;
+	width: 60px;
+	border-radius: 10px;
+	background: $igloo;
+}
+	
+	.front {
+		position: absolute;
+		z-index: 10;
+		width: 400px;
+		height: 90px;
+		left: 0px;
+		bottom: 0px;
+		background: #fff;
+		z-index: 999;
+	}
+	.front .temperature {
+		float: left;
+		margin-left: 20px;
+		font-size: 45px;
+		line-height: 90px;
+	}
+	.front .info {
+		float: left;
+		margin: 25px 0 0 13px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+.front .preview {
+  float: right;
+  font-weight: 400;
+  text-align: right;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 25px 20px 0 0;
+}
+.front .preview td {
+  padding: 0 3px;
+  text-transform: uppercase;
+}
+.front .preview td:first-child {
+  font-weight: 300;
+}
+
+
+
+@-webkit-keyframes rise {
+	from {
+		transform: translate(-20px, 200px);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+
+
+@keyframes rain {
+  from { top: 0; }
+  to   { top: 768px; }
+}
+
+.drop {
+  position: fixed;
+}
+
+.layer1 {
+  width: 2px;
+  height: 6px;
+  background-color: #fff;
+  animation: rain .5s infinite linear;
+}

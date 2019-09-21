@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+.center input {
+  display: none;
+}
+.center .overlay {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: opacity .5s ease;
+}
+.center .label {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  border: 2px solid #FFF;
+  transition: .5s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.center .label:hover {
+  cursor: pointer;
+  z-index: 5;
+}
+.center .label-1 {
+  top: 0;
+  left: 0;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center .label-2 {
+  top: 0%;
+  left: 33%;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center .label-3 {
+  top: 0%;
+  left: 66%;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center .label-4 {
+  top: 33%;
+  left: 0%;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center .label-5 {
+  top: 33%;
+  left: 33%;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center .label-6 {
+  top: 33%;
+  left: 66%;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center .label-7 {
+  top: 66%;
+  left: 0%;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center .label-8 {
+  top: 66%;
+  left: 33%;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center .label-9 {
+  top: 66%;
+  left: 66%;
+  background-image: url("https://loremflickr.com/320/240/dog");
+}
+.center #pic-1:checked ~ .label-1 {
+  -webkit-transform: translate3d(133px, 133px, 0) scale(3.2);
+          transform: translate3d(133px, 133px, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-2:checked ~ .label-2 {
+  -webkit-transform: translate3d(0, 133px, 0) scale(3.2);
+          transform: translate3d(0, 133px, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-3:checked ~ .label-3 {
+  -webkit-transform: translate3d(-133px, 133px, 0) scale(3.2);
+          transform: translate3d(-133px, 133px, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-4:checked ~ .label-4 {
+  -webkit-transform: translate3d(133px, 0, 0) scale(3.2);
+          transform: translate3d(133px, 0, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-5:checked ~ .label-5 {
+  -webkit-transform: translate3d(266px, 0, 0) scale(3.2);
+          transform: translate3d(266px, 0, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-5:checked ~ .label-5 {
+  -webkit-transform: translate3d(0, 0, 0) scale(3.2);
+          transform: translate3d(0, 0, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-6:checked ~ .label-6 {
+  -webkit-transform: translate3d(-133px, 0, 0) scale(3.2);
+          transform: translate3d(-133px, 0, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-7:checked ~ .label-7 {
+  -webkit-transform: translate3d(133px, -133px, 0) scale(3.2);
+          transform: translate3d(133px, -133px, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-8:checked ~ .label-8 {
+  -webkit-transform: translate3d(0, -133px, 0) scale(3.2);
+          transform: translate3d(0, -133px, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-9:checked ~ .label-9 {
+  -webkit-transform: translate3d(-133px, -133px, 0) scale(3.2);
+          transform: translate3d(-133px, -133px, 0) scale(3.2);
+  transition: .5s ease;
+  border: none;
+  z-index: 3;
+}
+.center #pic-1:checked ~ .overlay,
+.center #pic-2:checked ~ .overlay,
+.center #pic-3:checked ~ .overlay,
+.center #pic-4:checked ~ .overlay,
+.center #pic-5:checked ~ .overlay,
+.center #pic-6:checked ~ .overlay,
+.center #pic-7:checked ~ .overlay,
+.center #pic-8:checked ~ .overlay,
+.center #pic-9:checked ~ .overlay {
+  opacity: 1;
+  z-index: 2;
+  transition: opacity .5s ease;
+}
